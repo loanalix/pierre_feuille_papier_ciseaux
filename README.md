@@ -1,3 +1,3 @@
-# pierre_feuille_papier_ciseauxg
+# pierre_feuille_papier_ciseaux
 *Pierre feuille ciseau LARP* 
 
