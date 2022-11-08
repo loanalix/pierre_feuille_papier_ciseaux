@@ -134,16 +134,40 @@ while tour != 5 :
 
 def input():
     #Revoie un caractère de type string au hasard  
+  return 
+
+
 
 #Ecercice:
     # Faire un mini jeu qui affiche un message lorsque imput renvoie le bon caracterer 
     # le caractère doit etre parametrale 
-
-
-
-
-
-
-def input(caractere): 
     #On definit un caractere au hasard 
-    #On le repete tanque celui ci est bon 
+    #Tanque le caractère est bon 
+  
+#1
+def miniGame (winCondition):
+    # Je définie une variable char qui permet de contenir le caractere genere par imput 
+    char = None 
+    #Je definie une variable tries pour savoir combien d'essaies il a fallut pour genere le caractere winCondition 
+    tries = 0 
+    # Tant que la variable char par un caractere genere au hasard avec input 
+    while (char != xinCondition )
+        #je redefinis la variable char par un caracte genere au hasard avec imput 
+        char = input()
+        #j'incremente la variable tries 
+        tries + = 1
+    # J affiche la variable tries 
+    print(tries)
+
+
+#2 
+def akiLettre(lettreADeviner,nombreEssais=0 ):
+    #je definis d'abord la lettre a deviner 
+    lettreADeviner = input()
+    #puis le nombre d'essais 
+    nombresEssaisd = 0 
+    #ensuite on boucle tant que la lettre en parametre et la lettre a deviner sont differentes 
+    if lettre != lettreADeviner :
+        #on recommence la fonction ( appel recusif de la fonction)  
+        return akiLettre(lettreADeviner,nombreEssais+1 )
+    print("Bien joué BG !")
