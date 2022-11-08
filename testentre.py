@@ -33,7 +33,35 @@ def concat(a,b): # je definit un fonction a et b
 #la fonction(tableau,0) doit renvoyer "0,4,7" n'hesitez pas a implementer la premiere fonction ; 
 
 
-tableauMultiType = ["Alexandre" , true , tableau, 4 > 2, None ]
+
+
+
+
+
+
+
+tableauMultiType = ["Alexandre" , True , tableau, 4 > 2, None ]
 tableau = [0,1,2,3]
 tableauMultiDim = [ tableauDim1 , tableauMultiDim2]
 tableauMultiDim[1][2] # Renvoie 21
+
+tableauCleVal = {"Cle" : "Valeur" }
+tableauCleVal["Cle"] #Renvoie "Valeur"
+
+#Tel que 
+listeUtilisateur ={
+    "Alexandre" : "motdepasse",
+    "Michel" : "password" ,
+    "Toto" : "12345" ,
+    "JhonDoe" : "azerty"
+} 
+
+#Ecrivez la fonction login(userName, pasword, listUser) permettant d'afficher un message de connexion si 
+#le combo user/password est bon 
+
+def mlg(userName, pasword): 
+    #trouver l'utilisateur dans la liste 
+    #trouver son mot de pass dans la liste 
+
+    print(mlg)
+
