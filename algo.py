@@ -151,11 +151,11 @@ def miniGame (winCondition):
     #Je definie une variable tries pour savoir combien d'essaies il a fallut pour genere le caractere winCondition 
     tries = 0 
     # Tant que la variable char par un caractere genere au hasard avec input 
-    while (char != xinCondition )
+    while (char != winCondition ):
         #je redefinis la variable char par un caracte genere au hasard avec imput 
         char = input()
         #j'incremente la variable tries 
-        tries + = 1
+        tries += 1
     # J affiche la variable tries 
     print(tries)
 
