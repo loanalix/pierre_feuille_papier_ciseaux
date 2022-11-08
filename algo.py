@@ -131,3 +131,19 @@ while tour != 5 :
     jouerUnTour()
 # J'effectue l'action de passer un tour 
     tour = tour + 1 
+
+def input():
+    #Revoie un caractère de type string au hasard  
+
+#Ecercice:
+    # Faire un mini jeu qui affiche un message lorsque imput renvoie le bon caracterer 
+    # le caractère doit etre parametrale 
+
+
+
+
+
+
+def input(caractere): 
+    #On definit un caractere au hasard 
+    #On le repete tanque celui ci est bon 
