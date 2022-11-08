@@ -83,22 +83,18 @@ def calcuSalaireNet(salairebrut,public):
     #Alors je retourn le salaire brut - 23% de douille bien a l'ancienne 
         return withdrawFees(salairebrut, 23)
 
-def calcuSalaireNet(salairebrut,public):
- #Je calcule le salaire net d'un employé du secteur public 
- if public: return SalaireBrut * 15/100
- #je calcule le salaire net d'un employé d'une entreprise privée
- return Salaire 
+
 
 nbPersonne = x
 
 if nbPersonne == 1 :
     tuRentre()
-else if nbPersonne == 3 : 
-    tuRentre
-else if nbPersonne == 5 :
-    tuRentre 
+elif nbPersonne == 3 : 
+    tuRentre()
+elif nbPersonne == 5 :
+    tuRentre()
 else:
-     tuRentrePas     
+     tuRentrePas()
 
 
 #calculer le revenu par seconde 
@@ -106,5 +102,32 @@ else:
 #H/JO
 # année /JO  
 #calculNET converti depuis brut 
+0.000360
 
-#0.000360
+def calcuSalaireNet(salairebrut,public):
+ #Je calcule le salaire net d'un employé du secteur public 
+ if public: return SalaireBrut * 15/100
+ #je calcule le salaire net d'un employé d'une entreprise privée
+ return SalaireBrut * 23/100 
+
+
+def div(x,y ):
+    #Si Y est 0, alors la division est impossible 
+    if y == 0 :
+        #Alors afficher un message d'erreur 
+        print("ERR:Can't divide by 0")
+        #Et renvoyer rien 
+        return
+    #Sinon,renvoyer la division de X rt Y 
+    return x/y 
+
+
+
+
+tour = 0 
+# Tanque je ne suis pas au tour 5 
+while tour != 5 : 
+# Appeler la fonction JouerUnTour
+    jouerUnTour()
+# J'effectue l'action de passer un tour 
+    tour = tour + 1 
