@@ -31,3 +31,9 @@ def concat(a,b): # je definit un fonction a et b
 #avec l'ensemble des occuration d'un chiffre e.g.:
 #Pour un tableau = [0,1,1,1,0,1,1,0,1]
 #la fonction(tableau,0) doit renvoyer "0,4,7" n'hesitez pas a implementer la premiere fonction ; 
+
+
+tableauMultiType = ["Alexandre" , true , tableau, 4 > 2, None ]
+tableau = [0,1,2,3]
+tableauMultiDim = [ tableauDim1 , tableauMultiDim2]
+tableauMultiDim[1][2] # Renvoie 21
