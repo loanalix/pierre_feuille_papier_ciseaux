@@ -37,7 +37,7 @@ assertionDEUXpt2 = (e * s < r)
 #assertionDEUX===(false==false)
 #assertionDEUX=== #false 
 
-def calculPtDeux()
+def calculPtDeux():
  return ((e * s < r))
 
 assertionDEUX = ((365 * 3) /(4 - (12-8))) * (rh) > r == calculPtDeux(1,2,3)
@@ -60,8 +60,45 @@ def modulo(x,y):
  return(x%y)
 
 def calculeSalaireParS(salaireH,HParJO,JOParAn):
-    salaireH*HParJO*JOParAn
-    return(salaireParS)
+    salaireAnnuelle = salaireH*HParJO*JOParAn #je calcule le salaire Annuel
+    nbSecondeParAn = 365*24*60*60 #Je calcul le nombre de seconde par an 
+    #return( salaireH*HParJO*JOParAn)/(365*24*60*60) 
+SalaireAnnuel/NbDeSAnnuelles #je divise mon salaire par le nombre de seconde par an 
+
+
+
+def withdrawFees(total,percent):
+    #calcule de mon,tant des taxes a retirer
+    fees=totale*(percent/100)
+    #je retourne mon totale sans les taxes 
+    return total-fees
+
+def calcuSalaireNet(salairebrut,public):
+    #Si j'occupe un post de la fonction publique
+    if public:
+    #Alors je retourne le salaire brut -15 % de taxes
+         return withdrawFees(salairebrut , 15)
+    #Sinon, c'estq ue je suis un travailleur privé,
+    else:
+    #Alors je retourn le salaire brut - 23% de douille bien a l'ancienne 
+        return withdrawFees(salairebrut, 23)
+
+def calcuSalaireNet(salairebrut,public):
+ #Je calcule le salaire net d'un employé du secteur public 
+ if public: return SalaireBrut * 15/100
+ #je calcule le salaire net d'un employé d'une entreprise privée
+ return Salaire 
+
+nbPersonne = x
+
+if nbPersonne == 1 :
+    tuRentre()
+else if nbPersonne == 3 : 
+    tuRentre
+else if nbPersonne == 5 :
+    tuRentre 
+else:
+     tuRentrePas     
 
 
 #calculer le revenu par seconde 
@@ -70,6 +107,4 @@ def calculeSalaireParS(salaireH,HParJO,JOParAn):
 # année /JO  
 #calculNET converti depuis brut 
 
-0.000360
-
-def
+#0.000360
