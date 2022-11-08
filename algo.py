@@ -37,38 +37,39 @@ assertionDEUXpt2 = (e * s < r)
 #assertionDEUX===(false==false)
 #assertionDEUX=== #false 
 
-def calculPtDeux(){
-       return ((e * s < r))
-}
+def calculPtDeux()
+ return ((e * s < r))
 
-assertionDEUX = ((365 * 3) /(4 - (12-8))) * (rh) > r == def calculPtDeux(1,2,3)
+assertionDEUX = ((365 * 3) /(4 - (12-8))) * (rh) > r == calculPtDeux(1,2,3)
 
 def add(x,y):
-    return(x+y)
+ return(x+y)
 
 
 def sub(x,y):
-    return(x-y)
+ return(x-y)
 
 
 def multiplite(x,y):
-    return(x*y)
+ return(x*y)
 
 def divide(x,y):
-    return(x/y)
+ return(x/y)
 
 def modulo(x,y):
-    return(x%y)
+ return(x%y)
 
-
+def calculeSalaireParS(salaireH,HParJO,JOParAn):
+    salaireH*HParJO*JOParAn
+    return(salaireParS)
 
 
 #calculer le revenu par seconde 
 #salaireH
 #H/JO
 # année /JO  
-calculNET converti depuis brut 
+#calculNET converti depuis brut 
 
 0.000360
 
-def 
+def
