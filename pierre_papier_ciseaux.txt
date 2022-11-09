@@ -6,14 +6,18 @@
 #Initialiser pierre a 0
 #Initialiser feuille a 1
 #Initialiser ciseaux a 2
+#Definir chaineResultat en tan que string 
 
-#On fait choisir un chifre au hasard a l'ordinateur graçe a la fonction "radint" 
 #On fait choisir un chifre au joueur avec la fonction imput 
 
 
 #Assigne a choixJoueur le retour de l'execution de la fonction imput 
 
 #tant que choixJoueur est true 
+    Si choixJoueur est 0, 1 ou 2 
     #Alors relance la parti  
 
-Si choixJoueur == false 
+Si choixJoueur est  false 
+
+
+#On fait choisir un chifre au hasard a l'ordinateur graçe a la fonction "radint"
