@@ -1,0 +1,4 @@
+#Debut 
+#On admet une fonction random qui donnera au hasard les valeurs de 0 a 3
+#On admet une fonction imput 
+
