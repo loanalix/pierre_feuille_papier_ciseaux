@@ -22,8 +22,15 @@ stringIntergerValue = str(342) #Renvoie "342" au lieu de 342
 #Exercice1 
 #Faire une fonction qui concatene 2 chaine de caractere , les separants par une virgule 
 
-def concat(a,b): # je definit un fonction a et b 
-    return a + " , "+ b  # je retoure les fonction a et b en les séparant par une virgule 
+#Definir une fonction w/ comme parametres : chaineA et chaineB
+#qui retourne la concatenation de chaineA, une comma et enfin chaine
+def concatWithComma(chaineA, chaineB): 
+    #Je m'assure que chaineA soit bien de type str
+    stringifiedChaineA = str(chaineA)
+    #Je m'assure que chaineA soit bien de type str
+    stringifiedChaineB = str(chaineB)
+    #Retourner chaineA concatené w/ un comma et chaineB
+    return stringifiedChaineA + " , "+ stringifiedChaineB
 
 
 #Exercice2 
@@ -33,9 +40,33 @@ def concat(a,b): # je definit un fonction a et b
 #la fonction(tableau,0) doit renvoyer "0,4,7" n'hesitez pas a implementer la premiere fonction ; 
 
 
-
-
-
+tableau = [0,1,1,1,0,1,1,0,1]
+#Definir une fonction qui prend une liste et une variable x quelconque 
+def findIndexes(tableau,x) :
+    #Initialiser i a 0
+    i = 0
+    #Definir chaineResultat en tan que string 
+    ChaineResultat = ""
+    #On determine firstTurn a true 
+    firstTurn = True 
+    #Tant que i est inferieur a la longeur de tableau 
+    while i< len(tableau) :
+            #Alors Si l'elt d'index i de tableau est egal a x
+        if tableau[i] == x :
+            # Alors 
+            print("")
+            #Si je suis au premier tour ( Si firstTurn est true )
+        if firstTurn: 
+                #Alors j'assigne str(i) a chaine resultat
+            ChaineResultat = str(i)
+                #On passe firstTurn a false
+            firstTurn = False 
+            #Sinon on assige a chaine resultat le retour de concatWithComma(chaineResultat, str(i))    
+            ChaineResultat = concatWithComma (ChaineResultat , str(i))
+        #On incremente i de 1 
+    i=i+1
+    #Retourner chaineResultat
+    return ChaineResultat
 
 
 
