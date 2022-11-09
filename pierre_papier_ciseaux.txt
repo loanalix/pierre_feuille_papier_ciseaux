@@ -1,4 +1,19 @@
 #Debut 
 #On admet une fonction random qui donnera au hasard les valeurs de 0 a 3
-#On admet une fonction imput 
+#On admet une fonction imput qui récupère le choix du joueur 
 
+#On definit une liste "pfc" qui comporte les element "1" "2" "3"
+#Initialiser pierre a 0
+#Initialiser feuille a 1
+#Initialiser ciseaux a 2
+
+#On fait choisir un chifre au hasard a l'ordinateur graçe a la fonction "radint" 
+#On fait choisir un chifre au joueur avec la fonction imput 
+
+
+#Assigne a choixJoueur le retour de l'execution de la fonction imput 
+
+#tant que choixJoueur est true 
+    #Alors relance la parti  
+
+Si choixJoueur == false 
