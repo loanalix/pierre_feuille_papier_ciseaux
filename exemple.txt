@@ -1,0 +1,103 @@
+Début
+
+On admet une fonction Key qui detecte sur quelle touche on a appuyé.
+On admet une fonction Random qui choisi aléatoirement un chiffre entre 1 et 3 compris.
+On admet une fonction Input qui récupère ce que le joueur à marqué.
+
+
+On définit une constante MenuState type Booléen qu'on définit comme Fausse
+
+
+
+On définit une fonction Joueur avec la variable choixJoueur tel que
+    On affiche "Pierre = 1, Feuille 2, Ciseau = 3"
+    On lit la variable choixJoueur entrée par l'utilisateur avec la fonction Input
+
+On retourne la variable choixJoueur
+
+
+
+On définit une fonction IA avec la variable choixIA tel que
+
+    On utilise la fonction Random pour définir la variable choixIA
+    Si la variable choixIA est égale à 1 alors 
+        on affiche "L'IA a choisi Pierre"
+
+    Si la variable choixIA est égale à 2 alors 
+        on affiche "L'IA a choisi Feuille"
+
+    Si la variable choixIA est égale à 3 alors 
+      on affiche "L'IA a choisi Ciseau"
+    
+    On retourne la variable choixIA
+
+
+
+On définit une fonction Result telle que
+    
+    Si la variable choixJoueur est égale variable choixIA alors 
+        on affiche "Egalité !"
+
+    Si la variable choixJoueur est égale à 1 et que la variable choixIA est égale à 3 alors 
+        on affiche "Le joueur a gagné"
+
+    Si la variable choixJoueur est égale à 2 et que la variable choixIA est égale à 1 alors 
+        on affiche "Le joueur a gagné"
+
+    Si la variable choixJoueur est égale à 3 et que la variable choixIA est égale à 2 alors 
+        on affiche "Le joueur a gagné"
+
+    Si la variable choixJoueur est égale à 1 et que la variable choixIA est égale à 2 alors 
+        on affiche "Le joueur a perdu"
+
+    Si la variable choixJoueur est égale à 2 et que la variable choixIA est égale à 3 alors 
+        on affiche "Le joueur a perdu"
+
+    Si la variable choixJoueur est égale à 3 et que la variable choixIA est égale à 1 alors 
+        on affiche "Le joueur a perdu"
+
+
+
+Tant que MenuState est Fausse alors
+
+    On affiche "Appuyer sur Entrée pour commencer"
+    
+    Si la touche "Entrée" est pressée alors
+        Définir MenuState comme Vraie
+    
+    On retourne la variable Menustate
+
+
+
+On appelle la fonction Joueur
+On appelle la fonction IA
+On appelle la fonction Result
+
+
+
+FIN
+
+
+
+#On definit une liste "pfc" qui comporte les element "1" "2" "3"
+#Initialiser pierre a 0
+#Initialiser feuille a 1
+#Initialiser ciseaux a 2
+
+#____ pour commencer la partie 
+
+#Definir chaineResultat en tan que string 
+
+#On fait choisir un chifre au joueur avec la fonction imput 
+#tant que choixJoueur est true 
+    #Si choixJoueur est 0, 1 ou 2 
+    #Alor assigne a choixJoueur le retour de l'execution de la fonction imput 
+    
+
+    #Alors relance la parti  
+
+   #Si choixJoueur est false 
+   
+
+
+#On fait choisir un chifre au hasard a l'ordinateur graçe a la fonction "radint"
