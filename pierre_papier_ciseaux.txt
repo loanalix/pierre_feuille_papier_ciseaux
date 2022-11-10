@@ -8,14 +8,14 @@
     #On initialise Feuille égale a 2
     #On initialise Ciseau égale a 3
     #On initialise fin du jeux a 4
-    #On affiche la variable choixPlayer entrée par l'utilisateur avec la fonction Input
+    #On definit la variable choixPlayer entrée par l'utilisateur avec le retourde la fonction Input
 
 #On retourne la variable choixPlayer
 
 
 #On definit la fonction ordinateur avec la variable IAChoix tel que 
     
-    #On utilise la fonction Random pour définir la variable IAChoix
+    #On definit la variable IAChoix avec le retour de l'execution de la  fonction Random 
     #Si la variable est égale a 1
         #Alor on affiche "pierre" 
 
@@ -52,7 +52,8 @@
 
 #Tant que choixPlayer est different de 4 
     #Alor demander "Choisir un nombre 1 et 3" 
-        #Appeler choixPlayer
-        #Appeler IAChoix
-        #Appeler Resultat   
+        #Executer choixPlayer
+        #Executer IAChoix
+        #Executer Resultat   
 
+#Fin
