@@ -1,7 +1,7 @@
 tablemorph = [
-        ["0" , "0" , "0"] ,
-        ["0" , "0" , "0"] ,
-        ["0" , "0" , "0"]
+        [0 , 0 , 0] ,
+        [0 , 0 , 0] ,
+        [0 , 0 , 0]
     ]
 
 
@@ -14,7 +14,7 @@ def grid() :
                 elif tablemorph[i][o]==2:
                     print('🤓',end='')
                 else:
-                    print("", end='')
+                    print("-", end='')
             print("",end='\n')
 
 def lagagne():
@@ -81,7 +81,7 @@ def lagagne():
     return winner
 
 def play(joueur):
-    print("joueur1", joueur, end="" )
+    print("Playeur", joueur, end="" )
     if joueur==1:
         print("😎",end="\n")
     if joueur==2:
@@ -89,39 +89,39 @@ def play(joueur):
 
     entry=input()
     if entry=="7":
-        if tablemorph[0][0]==0:
+        if (tablemorph[0][0])==0:
             tablemorph[0][0]=joueur
 
     elif entry=="8":
-        if tablemorph[0][1]==0:
+        if (tablemorph[0][1])==0:
             tablemorph[0][1]=joueur
 
     elif entry=="9":
-        if tablemorph[0][2]==0:
-            tablemorph[0][2]=joueur()
+        if (tablemorph[0][2])==0:
+            tablemorph[0][2]=joueur
     
     elif entry=="4":
-        if tablemorph[1][0]==0:
+        if (tablemorph[1][0])==0:
             tablemorph[1][0]=joueur
 
     elif entry=="5":
-        if tablemorph[1][1]==0:
+        if (tablemorph[1][1])==0:
             tablemorph[1][1]=joueur
 
     elif entry=="6":
-        if tablemorph[1][2]==0:
+        if (tablemorph[1][2])==0:
             tablemorph[1][2]=joueur
 
     elif entry=="1":
-        if tablemorph[2][0]==0:
+        if (tablemorph[2][0])==0:
             tablemorph[2][0]=joueur
 
     elif entry=="2":
-        if tablemorph[2][1]==0:
+        if (tablemorph[2][1])==0:
             tablemorph[2][1]=joueur  
 
     elif entry=="3":
-        if tablemorph[2][2]==0:
+        if (tablemorph[2][2])==0:
             tablemorph[2][2]=joueur        
 
     else:
