@@ -1,4 +1,113 @@
-#Debut 
+
+import random 
+#On admet une fonction random qui donnera au hasard les valeurs de 0 a 3
+#On admet une fonction imput qui récupère le nom du joueur
+nom=input("Veuillez saisir votre nom")
+joueur1=0
+joueur2=0
+nuls=0
+#Tant que le coup du joueur 1 est different de "q" on lance le jeu 
+while True:
+ print(nom,joueur1,"égalités:",nuls,"joueur2",joueur2)
+ coupjoueur1=input("entrez votre coup: (p)ierre,(f)euille,(c)iseaux ou (q)uitter:")
+ #Si coupjoueur1 est "q" 
+ if coupjoueur1=="q":
+    #Alors affiché "quitté le jeu"
+    print("vous avez quitté le jeu")
+    #Arreter la boucle 
+    break
+#Si coupjoueur1 est different "p" "f" et "c" 
+ if coupjoueur1!="p" and coupjoueur1!="f" and coupjoueur1!="c":
+    #La boucle continue
+    continue
+#Si coupjoueur1 est "p"
+ if coupjoueur1=="p":
+    #Alors affiché "pierre contre"
+    print("pierre contre")
+ elif coupjoueur1=="f":
+    #Alors affiché "feuille contre"
+    print("feuille contre")
+#Si le coup joueur est p    
+ elif coupjoueur1=="c":
+    #Alors affiché "ciseaux contre"
+    print("ciseaux contre")
+
+#on lance la fonction randome nomée r 
+ r=random.randint(1,3)
+ #si r verifie 1 
+ if r==1:
+   #Alors le coup du joueur 2 est pierre 
+    coupjoueur2="p"
+    print("pierre")
+   #si r verifie 2 
+ elif r==2:
+   #Alors le coup du joueur 2 est feuille
+    coupjoueur2="f"
+    print("feuille")
+   #sinon le coup du joueur 2 est ciseaux 
+ else:
+    coupjoueur2="c"
+    print("ciseaux")
+#si le coup du jouer 2 est le même que celu du joueur 1 
+ if coupjoueur1==coupjoueur2:
+   #Afficher "partie nulle "
+    print("partie nulle")
+    nuls=nuls+1
+
+ #Si le coup joueur 1 est "p" et le coup joueur2 est "c"  
+ elif coupjoueur1=="p" and coupjoueur2=="c":
+    #Afficher "vous avez gagné "
+    print("vous avez gagné")
+    #Ajouer plus 1 au joueur1 
+    joueur1=joueur1+1
+ #Si le coup joueur 1 est "p" et le coup joueur2 est "f" 
+ elif coupjoueur1=="p" and coupjoueur2=="f":
+    #Afficher "partie perdu "
+    print("vous avez perdu")
+    #Ajouer plus 1 au joueur2 
+    joueur2=joueur2+1
+ #Si le coup joueur 1 est "f" et le coup joueur2 est "c" 
+ elif coupjoueur1=="f" and coupjoueur2=="c":
+   #Afficher "vous avez perdu "
+    print("vous avez perdu")
+    #Ajouer plus 1 au joueur2 
+    joueur2=joueur2+1
+ #Si le coup joueur 1 est "f" et le coup joueur2 est "p" 
+ elif coupjoueur1=="f" and coupjoueur2=="p":
+    #Afficher "vous avez gagné "
+    print("vous avez gagné")
+    #Ajouer plus 1 au joueur1 
+    joueur1=joueur1+1
+ #Si le coup joueur 1 est "c" et le coup joueur2 est "p" 
+ elif coupjoueur1=="c" and coupjoueur2=="p":
+    #Afficher "vous avez perdu "
+    print("vous avez perdu")
+    #Ajouer plus 1 au joueur2 
+    joueur2=joueur2+1
+ #Si le coup joueur 1 est "c" et le coup joueur2 est "f" 
+ elif coupjoueur1=="c" and coupjoueur2=="f":
+    #Afficher "vous avez gagné "
+    print("vous avez gagné")
+    #Ajouer plus 1 au joueur1 
+    joueur1=joueur1+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #phase test 
+
+
+
+    #Debut 
 #On admet une fonction random qui donnera au hasard les valeurs de 0 a 3
 #On admet une fonction imput qui récupère le choix du joueur 
 #import random 
@@ -82,71 +191,3 @@
         #Executer Resultat   
 
 #Fin
-
-
-
-
-import random 
-#On admet une fonction random qui donnera au hasard les valeurs de 0 a 3
-#On admet une fonction imput qui récupère le nom du joueur
-nom=input("Veuillez saisir votre nom")
-joueur1=0
-joueur2=0
-nuls=0
-while True:
- print(nom,joueur1,"égalités:",nuls,"joueur2",joueur2)
- coupjoueur1=input("entrez votre coup: (p)ierre,(f)euille,(c)iseaux ou (q)uitter:")
- #Si coupjoueur1 est "q" 
- if coupjoueur1=="q":
-    #Alors affiché "quitté le jeu"
-    print("vous avez quitté le jeu")
-    #Arreter la boucle 
-    break
-#Si coupjoueur1 est different "p" "f" et "c" 
- if coupjoueur1!="p" and coupjoueur1!="f" and coupjoueur1!="c":
-    #La boucle continue
-    continue
-#Si coupjoueur1 est "p"
- if coupjoueur1=="p":
-    #Alors affiché "pierre contre"
-    print("pierre contre")
- elif coupjoueur1=="f":
-    #Alors affiché "feuille contre"
-    print("feuille contre")
-#Si le coup joueur est p    
- elif coupjoueur1=="c":
-    #Alors affiché "ciseaux contre"
-    print("ciseaux contre")
-
- r=random.randint(1,3)
- if r==1:
-    coupjoueur2="p"
-    print("pierre")
- elif r==2:
-    coupjoueur2="f"
-    print("feuille")
- else:
-    coupjoueur2="c"
-    print("ciseaux")
- if coupjoueur1==coupjoueur2:
-    print("partie nulle")
-    nuls=nuls+1
-   
- elif coupjoueur1=="p" and coupjoueur2=="c":
-    print("vous avez gagné")
-    joueur1=joueur1+1
- elif coupjoueur1=="p" and coupjoueur2=="f":
-    print("vous avez perdu")
-    joueur2=joueur2+1
- elif coupjoueur1=="f" and coupjoueur2=="c":
-    print("vous avez perdu")
-    joueur2=joueur2+1
- elif coupjoueur1=="f" and coupjoueur2=="p":
-    print("vous avez gagné")
-    joueur1=joueur1+1
- elif coupjoueur1=="c" and coupjoueur2=="p":
-    print("vous avez perdu")
-    joueur2=joueur2+1
- elif coupjoueur1=="c" and coupjoueur2=="f":
-    print("vous avez gagné")
-    joueur1=joueur1+1
