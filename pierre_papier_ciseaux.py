@@ -1,28 +1,28 @@
 #Debut 
 #On admet une fonction random qui donnera au hasard les valeurs de 0 a 3
 #On admet une fonction imput qui récupère le choix du joueur 
-import random 
+#import random 
 
 #On définit une fonction Playeur avec la variable choixPlayer tel que
-def Playeur (choixPlayer) : 
+#def Playeur (choixPlayer) : 
     #On initialise Pierre égale a 1
-    Pierre = 1 
+    #Pierre = 1 
     #On initialise Feuille égale a 2
-    Feuille = 2 
+    #Feuille = 2 
     #On initialise Ciseau égale a 3
-    Ciseau = 3 
+    #Ciseau = 3 
     #On initialise fin du jeux a 4
-    fin = 4 
+    #fin = 4 
     #On definit la variable choixPlayer entrée par l'utilisateur avec le retourde la fonction Input
-    choixPlayer = int(input)
+    #choixPlayer = int(input)
     
 #On retourne la variable choixPlayer
 #return choixPlayer 
 
 #On definit la fonction ordinateur avec la variable IAChoix tel que 
-def ordinateur (IAChoix) : 
-    int(choixPlayer)  
-    r=random.randint(1,2,3) 
+#def ordinateur (IAChoix) : 
+    #int(choixPlayer)  
+    #r=random.randint(1,2,3) 
     
     #On definit la variable IAChoix avec le retour de l'execution de la  fonction Random 
 
@@ -131,7 +131,7 @@ while True:
  if coupjoueur1==coupjoueur2:
     print("partie nulle")
     nuls=nuls+1
-
+   
  elif coupjoueur1=="p" and coupjoueur2=="c":
     print("vous avez gagné")
     joueur1=joueur1+1
