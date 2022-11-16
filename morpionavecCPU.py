@@ -233,9 +233,4 @@ def game():
                 #retourner la fonction
                 return
 #Appeler la fonction game
-game()  
-
-
-
-
-
+game()
