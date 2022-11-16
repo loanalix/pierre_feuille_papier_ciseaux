@@ -1,3 +1,5 @@
+#DEBUT
+
 #On créer une liste que l'on utilisera comme une table 
 tablemorph = [
         [0 , 0 , 0] ,
@@ -237,5 +239,5 @@ game()
 
 
 
-
+#Fin
 

@@ -1,3 +1,5 @@
+#DEBUT
+
 #On créer une liste que l'on utilisera comme une table 
 tablemorph = [
         [0 , 0 , 0] ,
@@ -198,6 +200,8 @@ def play(joueur):
         print("pas possible")
         #Refaire jouer le joueur 
         play(joueur)
+
+    
 #On definit la fonction "game"
 def game():
     #On importe la liste dans la fonction 
@@ -234,3 +238,12 @@ def game():
                 return
 #Appeler la fonction game
 game()
+
+
+#FIN
+
+
+
+technique du L 
+le faire commencer sur le milieu d en haut, bas droite ou gauche 
+
