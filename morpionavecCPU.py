@@ -1,5 +1,6 @@
 #DEBUT
 
+from random import *
 #On créer une liste que l'on utilisera comme une table 
 tablemorph = [
         [0 , 0 , 0] ,
@@ -33,19 +34,20 @@ def grid() :
 def lagagne():
     #On introduit la liste 
     global tablemorph
-    # 
+    # on intialisse que il n'y a aucun score 
     col=0
     row=0
-    #
-    check1=0
+    #on initialsier les check pour les 2 joueur à 0
+    check1=0 
     check2=0
+    #Initialiser qu'il n'y a pas de "winner"
     winner = "none"
     #gagner a l'horizontal
      #On repete la variable col 3 fois   
     for col in range(3):
          #On repete la variable row 3 fois 
         for row in range(3):
-            #Si 
+            #Si la liste 
             if tablemorph[col-1][row-1]==1:
                 check1=check1+1
             #Si la liste 
@@ -115,18 +117,17 @@ def lagagne():
         for o in range(3):
             if tablemorph[i][o] != 0:
                 look = look + 1
+    #Si toutes les cases sont remplis             
     if look==9:
+        #"winner" est égale a l'égalité 
         winner="tie"
+    #Retourner le gagnant
     return winner
 #definir la fonction play avec comme parametre joueur 
 def play(joueur):
     #Afficher Le mot "Playeur"
     print("Playeur", joueur, end="" )
-    #Si c'est le joueur1 
-    if joueur==1:
-        #Alors afficher un emoji cool puis aller a la ligne 
-        print("😎",end="\n")
-     #Si c'est le joueur1 
+     #Si c'est le joueur2 
     if joueur==2:
          #Alors afficher un emoji neurd puis aller a la ligne 
         print("🤓",end="\n")
@@ -201,7 +202,14 @@ def play(joueur):
         #Refaire jouer le joueur 
         play(joueur)
 
-    
+#On definit une fonction ordinateur avec comme parametre "IA"
+def ordinateur (IA): 
+    #Si c'est l'IA qui joue 
+    if IA==1:
+        #Alors afficher un emoji cool puis aller a la ligne 
+        print("😎",end="\n")
+
+        
 #On definit la fonction "game"
 def game():
     #On importe la liste dans la fonction 
@@ -237,13 +245,9 @@ def game():
                 #retourner la fonction
                 return
 #Appeler la fonction game
-game()
-
-
-#FIN
+game()  
 
 
 
-technique du L 
-le faire commencer sur le milieu d en haut, bas droite ou gauche 
+#Fin
 
