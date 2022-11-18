@@ -17,11 +17,9 @@ def grid() :
             #On repete la variable i pour avoir 3 lignes
             for o in range(3):
                 #Si la liste verifie 1 
-                if tablemorph[i][o]==1:
-                    #alors on affiche le joueur cool (joueur1 )
-                    print('😎',end='')
+                
                 #Si la liste verifie 2
-                elif tablemorph[i][o]==2:
+                if tablemorph[i][o]==2:
                      #alors on affiche le joueur neurd (joueur2 )
                     print('🤓',end='')
                 #Sinon 
@@ -201,8 +199,8 @@ def play(joueur):
         print("pas possible")
         #Refaire jouer le joueur 
         play(joueur)
-      
-        
+
+
         
 #On definit la fonction "game"
 def game():
@@ -246,3 +244,96 @@ game()
 #Fin
 
 # https://github.com/NathanFallet/MorpionTPE/commit/2e2bc099f13a0632a286e1a0425b85f2cf3f7f42
+
+
+
+
+
+
+def ordinateur(IA):
+    global tablemorph
+    if tablemorph[i][o]==1:
+        print('😎',end='')
+    else:
+        #On affiche le neutre "-"
+        print("-", end='')
+        #A la fin d'une liste on va a la ligne 
+    print("",end='\n')
+
+def jouer(IA):
+    #Afficher Le mot "Playeur"
+    print("Playeur", IA, end="" )
+     #Si c'est le joueur2 
+    if IA==1:
+         #Alors afficher un emoji neurd puis aller a la ligne 
+        print("🤓",end="\n")
+    #Demader au joueur de choisir sa position 
+    entry=randint[1,10]
+    #Si il choisi "7"
+    if entry=="7":
+        #Si la position en haut a gauche est libre 
+        if (tablemorph[0][0])==0:
+            #Placer l'emoji du joueur en haut a gauche 
+            tablemorph[0][0]=joueur
+
+    #Si il choisi "8"
+    elif entry=="8":
+        #Si la position en haut au milieu est libre 
+        if (tablemorph[0][1])==0:
+            #Placer l'emoji du joueur en haut au milieu
+            tablemorph[0][1]=joueur
+
+    #Si il choisi "9"
+    elif entry=="9":
+        #Si la position en haut a droite est libre 
+        if (tablemorph[0][2])==0:
+            #Placer l'emoji du joueur en haut a droite
+            tablemorph[0][2]=joueur
+
+    #Si il choisi "4"
+    elif entry=="4":
+        #Si la position au milieu a gauche est libre 
+        if (tablemorph[1][0])==0: 
+            #Placer l'emoji du joueur au milieu a gauche
+            tablemorph[1][0]=joueur
+
+    #Si il choisi "5"
+    elif entry=="5":
+        #Si la position au milieu est libre 
+        if (tablemorph[1][1])==0:
+            #Placer l'emoji du joueur au milieu
+            tablemorph[1][1]=joueur
+
+    #Si il choisi "6"
+    elif entry=="6":
+        #Si la position au milieu a droite est libre
+        if (tablemorph[1][2])==0:
+            #Placer l'emoji du joueur au milieu a droite
+            tablemorph[1][2]=joueur
+
+    #Si il choisi "1"
+    elif entry=="1":
+        #Si la position en bas a gauche est libre
+        if (tablemorph[2][0])==0:
+            #Placer l'emoji du joueur en bas a gauche
+            tablemorph[2][0]=
+
+    #Si il choisi "2"
+    elif entry=="2":
+        #Si la position en bas au milieu est libre
+        if (tablemorph[2][1])==0:
+            #Placer l'emoji du joueur en bas au milieu 
+            tablemorph[2][1]=joueur 
+
+    #Si il choisi "3"
+    elif entry=="3":
+        #Si la position en bas a droite est libre 
+        if (tablemorph[2][2])==0:
+            #Placer l'emoji du joueur en bas a droite 
+            tablemorph[2][2]=joueur        
+    #Si non si les position de son pas libre ou que le joueur rentre un mauvais numero 
+    else:
+        #Afficher le message "pas possible"
+        print("pas possible")
+        #Refaire jouer le joueur 
+        play(joueur)
