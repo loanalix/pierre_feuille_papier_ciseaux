@@ -1,0 +1,218 @@
+#DEBUT
+
+#On créer une liste que l'on utilisera comme une table 
+
+
+#On definit une grille 
+
+    #on introduit la liste dans la fonction 
+   
+    #On repete la variable i pour avoir 3 colones 
+   
+            #On repete la variable i pour avoir 3 lignes
+           
+                #Si la liste verifie 1 
+              
+                    #alors on affiche le joueur cool (joueur1 )
+                   
+                #Si la liste verifie 2
+               
+                     #alors on affiche le joueur neurd (joueur2 )
+                  
+                #Sinon 
+            
+                    #On affiche le neutre "-"
+                 
+            #A la fin d'une liste on va a la ligne 
+           
+#On definit la fonction "lagagne"
+
+    #On introduit la liste 
+    
+    # on intialisse que il n'y a aucun score 
+    
+    #on initialsier les check pour les 2 joueur à 0
+   
+    #Initialiser qu'il n'y a pas de "winner"
+   
+    #gagner a l'horizontal
+     #On repete la variable col 3 fois   
+ 
+         #On repete la variable row 3 fois 
+      
+            #Si la liste 
+           
+            #Si la liste 
+          
+            #Si la verification1 est sur 3 cases 
+            
+            #Si la verification2 est sur 3 cases
+           
+        #Reinitialiser la verification1 
+      
+        #Reinitialiser la verification2
+      
+    #gagner a la vertical 
+  
+           
+           
+              
+            #Si la verification1 est sur 3 cases
+            
+                #Alors c'est le joueur 1 qui gagne 
+                winner="joueur1"
+            #Si la verification2 est sur 3 cases
+         
+        #Reinitialiser la verification1
+      
+        #Reinitialiser la verification2
+       
+
+    #gagner en bias de gauche à droite
+   
+         #Si la verification1 est sur 3 cases
+      
+         #Si la verification2 est sur 3 cases
+       
+           
+    #gagner en bias de droite à gauche
+    
+        elif tablemorph[0][2]==2:
+           
+    #Reinitialiser la verification1
+  
+    #Reinitialiser la verification2
+  
+
+    #ganer pour egalité
+   
+              
+    #Si toutes les cases sont remplis             
+
+        #"winner" est égale a l'égalité 
+       
+    #Retourner le gagnant
+  
+#definir la fonction play avec comme parametre joueur 
+
+    #Afficher Le mot "Playeur"
+   
+    #Si c'est le joueur1 
+    
+        #Alors afficher un emoji cool puis aller a la ligne 
+       
+     #Si c'est le joueur2
+    
+         #Alors afficher un emoji neurd puis aller a la ligne 
+        
+    #Demader au joueur de choisir sa position 
+    
+    #Si il choisi "7"
+  
+        #Si la position en haut a gauche est libre 
+        
+            #Placer l'emoji du joueur en haut a gauche 
+            
+
+    #Si il choisi "8"
+   
+        #Si la position en haut au milieu est libre 
+       
+            #Placer l'emoji du joueur en haut au milieu
+           
+
+    #Si il choisi "9"
+   
+        #Si la position en haut a droite est libre 
+        
+            #Placer l'emoji du joueur en haut a droite
+           
+
+    #Si il choisi "4"
+   
+        #Si la position au milieu a gauche est libre 
+       
+            #Placer l'emoji du joueur au milieu a gauche
+           
+
+    #Si il choisi "5"
+   
+        #Si la position au milieu est libre 
+        
+            #Placer l'emoji du joueur au milieu
+          
+
+    #Si il choisi "6"
+   
+        #Si la position au milieu a droite est libre
+        
+            #Placer l'emoji du joueur au milieu a droite
+            
+
+    #Si il choisi "1"
+    
+        #Si la position en bas a gauche est libre
+        
+            #Placer l'emoji du joueur en bas a gauche
+            
+
+    #Si il choisi "2"
+   
+        #Si la position en bas au milieu est libre
+        
+            #Placer l'emoji du joueur en bas au milieu 
+             
+
+    #Si il choisi "3"
+   
+        #Si la position en bas a droite est libre 
+       
+            #Placer l'emoji du joueur en bas a droite 
+                  
+    #Si non si les position de son pas libre ou que le joueur rentre un mauvais numero 
+   
+        #Afficher le message "pas possible"
+        
+        #Refaire jouer le joueur 
+        
+#On definit la fonction "game"
+
+    #On importe la liste dans la fonction 
+    
+    #On affiche le message "pour jouer, utilisez les touches du pavé numérique "
+    
+    #On appel la fonction "grid"
+   
+    #Tant que c'est vrai 
+    
+        #On créer une boucle i qui est comprise entre 1 et 2 
+        
+            #On lance le jeux
+           
+            #On appel la fonction grid 
+           
+            #Si l'une des fonctions "lagagne" est verifier pour le joueur1
+            
+                #Alors afficher "Le joueur cool a gagner"
+                
+                #retourner la fonction
+                
+            #Si l'une des fonctions "lagagne" est verifier pour le joueur2
+            
+                #Alors afficher "Le joueur neurd a gagner"
+               
+                #retourner la fonction
+                
+            #Si la fonction "lagagne " vérifie la fonction "tie" 
+           
+                #Alors afficher "EGALITE!QUELLE SURPRISE!"
+                
+                #retourner la fonction
+                
+#Appeler la fonction game
+  
+
+
+
+#Fin
+
