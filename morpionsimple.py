@@ -136,73 +136,62 @@ def play(joueur):
         print("🤓",end="\n")
     #Demader au joueur de choisir sa position 
     entry=input()
-    #Si il choisi "7"
     if entry=="7":
-        #Si la position en haut a gauche est libre 
-        if (tablemorph[0][0])==0:
-            #Placer l'emoji du joueur en haut a gauche 
-            tablemorph[0][0]=joueur
-
-    #Si il choisi "8"
+        if(tablemorph[0][0]==0):
+            joueur[0][0]=joueur
+        else:
+            print("Vous ne pouvez pas faire cette action")
+            play(joueur)
     elif entry=="8":
-        #Si la position en haut au milieu est libre 
-        if (tablemorph[0][1])==0:
-            #Placer l'emoji du joueur en haut au milieu
+        if(tablemorph[0][1]==0):
             tablemorph[0][1]=joueur
-
-    #Si il choisi "9"
+        else:
+            print("Vous ne pouvez pas faire cette action")
+            play(joueur)
     elif entry=="9":
-        #Si la position en haut a droite est libre 
-        if (tablemorph[0][2])==0:
-            #Placer l'emoji du joueur en haut a droite
+        if(tablemorph[0][2]==0):
             tablemorph[0][2]=joueur
-
-    #Si il choisi "4"
+        else:
+            print("Vous ne pouvez pas faire cette action")
+            play(joueur)
     elif entry=="4":
-        #Si la position au milieu a gauche est libre 
-        if (tablemorph[1][0])==0: 
-            #Placer l'emoji du joueur au milieu a gauche
-            tablemorph[1][0]=joueur
-
-    #Si il choisi "5"
+        if(tablemorph[1][0]==0):
+           tablemorph[1][0]=joueur
+        else:
+            print("Vous ne pouvez pas faire cette action")
+            play(joueur)
     elif entry=="5":
-        #Si la position au milieu est libre 
-        if (tablemorph[1][1])==0:
-            #Placer l'emoji du joueur au milieu
+        if(tablemorph[1][1]==0):
             tablemorph[1][1]=joueur
-
-    #Si il choisi "6"
+        else:
+            print("Vous ne pouvez pas faire cette action")
+            play(joueur)
     elif entry=="6":
-        #Si la position au milieu a droite est libre
-        if (tablemorph[1][2])==0:
-            #Placer l'emoji du joueur au milieu a droite
+        if(tablemorph[1][2]==0):
             tablemorph[1][2]=joueur
-
-    #Si il choisi "1"
+        else:
+            print("Vous ne pouvez pas faire cette action")
+            play(joueur)
     elif entry=="1":
-        #Si la position en bas a gauche est libre
-        if (tablemorph[2][0])==0:
-            #Placer l'emoji du joueur en bas a gauche
+        if(tablemorph[2][0]==0):
             tablemorph[2][0]=joueur
-
-    #Si il choisi "2"
+        else:
+            print("Vous ne pouvez pas faire cette action")
+            play(joueur)
     elif entry=="2":
-        #Si la position en bas au milieu est libre
-        if (tablemorph[2][1])==0:
-            #Placer l'emoji du joueur en bas au milieu 
-            tablemorph[2][1]=joueur 
-
-    #Si il choisi "3"
+        if(tablemorph[2][1]==0):
+            tablemorph[2][1]=joueur
+        else:
+            print("Vous ne pouvez pas faire cette action")
+            play(joueur)
     elif entry=="3":
-        #Si la position en bas a droite est libre 
-        if (tablemorph[2][2])==0:
-            #Placer l'emoji du joueur en bas a droite 
-            tablemorph[2][2]=joueur        
-    #Si non si les position de son pas libre ou que le joueur rentre un mauvais numero 
+        if(tablemorph[2][2]==0):
+           tablemorph[2][2]=joueur
+        else:
+            print("Vous ne pouvez pas faire cette action")
+            play(joueur)
     else:
-        #Afficher le message "pas possible"
-        print("pas possible")
-        #Refaire jouer le joueur 
+        print("Erreur")
         play(joueur)
 #On definit la fonction "game"
 def game():
