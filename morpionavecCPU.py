@@ -208,69 +208,69 @@ def ordinateur (IA):
     if IA==1:
         #Alors afficher un emoji cool puis aller a la ligne 
         print("😎",end="\n")
-    entry=randint()
+    r=randint()
     #Si il choisi "7"
-    if entry=="7":
+    if r=="7":
         #Si la position en haut a gauche est libre 
         if (tablemorph[0][0])==0:
             #Placer l'emoji du joueur en haut a gauche 
-            tablemorph[0][0]=joueur
+            tablemorph[0][0]=IA
 
     #Si il choisi "8"
-    elif entry=="8":
+    elif r=="8":
         #Si la position en haut au milieu est libre 
         if (tablemorph[0][1])==0:
             #Placer l'emoji du joueur en haut au milieu
-            tablemorph[0][1]=joueur
+            tablemorph[0][1]=IA
 
     #Si il choisi "9"
-    elif entry=="9":
+    elif r=="9":
         #Si la position en haut a droite est libre 
         if (tablemorph[0][2])==0:
             #Placer l'emoji du joueur en haut a droite
-            tablemorph[0][2]=joueur
+            tablemorph[0][2]=IA
 
     #Si il choisi "4"
-    elif entry=="4":
+    elif r=="4":
         #Si la position au milieu a gauche est libre 
         if (tablemorph[1][0])==0: 
             #Placer l'emoji du joueur au milieu a gauche
-            tablemorph[1][0]=joueur
+            tablemorph[1][0]=IA
 
     #Si il choisi "5"
-    elif entry=="5":
+    elif r=="5":
         #Si la position au milieu est libre 
         if (tablemorph[1][1])==0:
             #Placer l'emoji du joueur au milieu
-            tablemorph[1][1]=joueur
+            tablemorph[1][1]=IA
 
     #Si il choisi "6"
-    elif entry=="6":
+    elif r=="6":
         #Si la position au milieu a droite est libre
         if (tablemorph[1][2])==0:
             #Placer l'emoji du joueur au milieu a droite
-            tablemorph[1][2]=joueur
+            tablemorph[1][2]=IA
 
     #Si il choisi "1"
-    elif entry=="1":
+    elif r=="1":
         #Si la position en bas a gauche est libre
         if (tablemorph[2][0])==0:
             #Placer l'emoji du joueur en bas a gauche
-            tablemorph[2][0]=joueur
+            tablemorph[2][0]=IA
 
     #Si il choisi "2"
-    elif entry=="2":
+    elif r=="2":
         #Si la position en bas au milieu est libre
         if (tablemorph[2][1])==0:
             #Placer l'emoji du joueur en bas au milieu 
-            tablemorph[2][1]=joueur 
+            tablemorph[2][1]=IA
 
     #Si il choisi "3"
-    elif entry=="3":
+    elif r=="3":
         #Si la position en bas a droite est libre 
         if (tablemorph[2][2])==0:
             #Placer l'emoji du joueur en bas a droite 
-            tablemorph[2][2]=joueur
+            tablemorph[2][2]=IA
        
         
 #On definit la fonction "game"
@@ -314,4 +314,4 @@ game()
 
 #Fin
 
-https://github.com/NathanFallet/MorpionTPE/commit/2e2bc099f13a0632a286e1a0425b85f2cf3f7f42
+# https://github.com/NathanFallet/MorpionTPE/commit/2e2bc099f13a0632a286e1a0425b85f2cf3f7f42
