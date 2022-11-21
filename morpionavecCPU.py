@@ -351,3 +351,94 @@ def jouer(IA):
         print("pas possible")
         #Refaire jouer le joueur 
         jouer(IA)
+
+
+if joueur==tablemorph[0][0]:
+    coupIA==tablemorph[0][1]
+    or coupIA==tablemorph[0][2]
+    or coupIA==tablemorph[1][0]
+    or coupIA==tablemorph[1][1]
+    or coupIA==tablemorph[1][2]
+    or coupIA==tablemorph[2][0]
+    or coupIA==tablemorph[2][1]
+    or coupIA==tablemorph[2][2]
+    
+    if joueur==tablemorph[0][1]:
+    coupIA==tablemorph[0][0]
+    or coupIA==tablemorph[0][2]
+    or coupIA==tablemorph[1][0]
+    or coupIA==tablemorph[1][1]
+    or coupIA==tablemorph[1][2]
+    or coupIA==tablemorph[2][0]
+    or coupIA==tablemorph[2][1]
+    or coupIA==tablemorph[2][2]
+
+    if joueur==tablemorph[0][2]:
+    coupIA==tablemorph[0][0]
+    or coupIA==tablemorph[0][1]
+    or coupIA==tablemorph[1][0]
+    or coupIA==tablemorph[1][1]
+    or coupIA==tablemorph[1][2]
+    or coupIA==tablemorph[2][0]
+    or coupIA==tablemorph[2][1]
+    or coupIA==tablemorph[2][2]
+
+    if joueur==tablemorph[1][0]:
+    coupIA==tablemorph[0][0]
+    or coupIA==tablemorph[0][1]
+    or coupIA==tablemorph[0][2]
+    or coupIA==tablemorph[1][1]
+    or coupIA==tablemorph[1][2]
+    or coupIA==tablemorph[2][0]
+    or coupIA==tablemorph[2][1]
+    or coupIA==tablemorph[2][2]
+
+    if joueur==tablemorph[1][1]:
+    coupIA==tablemorph[0][0]
+    or coupIA==tablemorph[0][1]
+    or coupIA==tablemorph[0][2]
+    or coupIA==tablemorph[1][0]
+    or coupIA==tablemorph[1][2]
+    or coupIA==tablemorph[2][0]
+    or coupIA==tablemorph[2][1]
+    or coupIA==tablemorph[2][2]
+
+    if joueur==tablemorph[1][2]:
+    coupIA==tablemorph[0][0]
+    or coupIA==tablemorph[0][1]
+    or coupIA==tablemorph[0][2]
+    or coupIA==tablemorph[1][0]
+    or coupIA==tablemorph[1][1]
+    or coupIA==tablemorph[2][0]
+    or coupIA==tablemorph[2][1]
+    or coupIA==tablemorph[2][2]
+
+    if joueur==tablemorph[2][0]:
+    coupIA==tablemorph[0][0]
+    or coupIA==tablemorph[0][1]
+    or coupIA==tablemorph[0][2]
+    or coupIA==tablemorph[1][0]
+    or coupIA==tablemorph[1][1]
+    or coupIA==tablemorph[1][2]
+    or coupIA==tablemorph[2][1]
+    or coupIA==tablemorph[2][2]
+
+    if joueur==tablemorph[2][1]:
+    coupIA==tablemorph[0][0]
+    or coupIA==tablemorph[0][1]
+    or coupIA==tablemorph[0][2]
+    or coupIA==tablemorph[1][0]
+    or coupIA==tablemorph[1][1]
+    or coupIA==tablemorph[1][2]
+    or coupIA==tablemorph[2][0]
+    or coupIA==tablemorph[2][2]
+
+    if joueur==tablemorph[2][2]:
+    coupIA==tablemorph[0][0]
+    or coupIA==tablemorph[0][1]
+    or coupIA==tablemorph[0][2]
+    or coupIA==tablemorph[1][0]
+    or coupIA==tablemorph[1][1]
+    or coupIA==tablemorph[1][2]
+    or coupIA==tablemorph[2][0]
+    or coupIA==tablemorph[2][1]
