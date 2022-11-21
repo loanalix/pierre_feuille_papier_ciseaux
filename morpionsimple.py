@@ -139,10 +139,10 @@ def play(joueur):
     
     #Si le choix est "7"
     if entry=="7":
-        #Si la position en haut a gauche  est libre 
+         #Si la position en haut au milieu est libre 
         if(tablemorph[0][0]==0):
-            #Placer l'emoji du joueur en haut a gauche 
-            joueur[0][0]=joueur
+            #Placer l'emoji du joueur en haut au milieu  
+            tablemorph[0][0]=joueur
         #Sinon
         else:
             #Afficher "Vous ne pouvez pas faire cette action"
