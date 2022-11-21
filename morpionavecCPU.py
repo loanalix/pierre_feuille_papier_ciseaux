@@ -136,85 +136,131 @@ def play(joueur):
         print("🤓",end="\n")
     #Demader au joueur de choisir sa position 
     entry=input()
-    #Si il choisi "7"
+    
+    #Si le choix est "7"
     if entry=="7":
-        #Si la position en haut a gauche est libre 
-        if (tablemorph[0][0])==0:
+        #Si la position en haut a gauche  est libre 
+        if(tablemorph[0][0]==0):
             #Placer l'emoji du joueur en haut a gauche 
-            tablemorph[0][0]=joueur
-        print("Vous ne pouvez pas faire cette action")
-        play(joueur)
-    #Si il choisi "8"
+            joueur[0][0]=joueur
+        #Sinon
+        else:
+            #Afficher "Vous ne pouvez pas faire cette action"
+            print("Vous ne pouvez pas faire cette action")
+             #Refaire jouer le joueur 
+            play(joueur)
+
+     #Si le choix est "8"
     elif entry=="8":
-        #Si la position en haut au milieu est libre 
-        if (tablemorph[0][1])==0:
-            #Placer l'emoji du joueur en haut au milieu
+         #Si la position en haut au milieu est libre 
+        if(tablemorph[0][1]==0):
+            #Placer l'emoji du joueur en haut au milieu  
             tablemorph[0][1]=joueur
-        print("Vous ne pouvez pas faire cette action")
-        play(joueur)
-    #Si il choisi "9"
+        #Sinon
+        else:
+            #Afficher "Vous ne pouvez pas faire cette action"
+            print("Vous ne pouvez pas faire cette action")
+             #Refaire jouer le joueur 
+            play(joueur)
+
+     #Si le choix est "9"
     elif entry=="9":
         #Si la position en haut a droite est libre 
-        if (tablemorph[0][2])==0:
-            #Placer l'emoji du joueur en haut a droite
+        if(tablemorph[0][2]==0):
+            #Placer l'emoji du joueur en haut a droite 
             tablemorph[0][2]=joueur
-        print("Vous ne pouvez pas faire cette action")
-        play(joueur)
-    #Si il choisi "4"
+        #Sinon
+        else:
+            #Afficher "Vous ne pouvez pas faire cette action"
+            print("Vous ne pouvez pas faire cette action")
+             #Refaire jouer le joueur 
+            play(joueur)
+
+     #Si le choix est "4"
     elif entry=="4":
         #Si la position au milieu a gauche est libre 
-        if (tablemorph[1][0])==0: 
-            #Placer l'emoji du joueur au milieu a gauche
-            tablemorph[1][0]=joueur
-        print("Vous ne pouvez pas faire cette action")
-        play(joueur)
-    #Si il choisi "5"
-    elif entry=="5":
-        #Si la position au milieu est libre 
-        if (tablemorph[1][1])==0:
-            #Placer l'emoji du joueur au milieu
-            tablemorph[1][1]=joueur
-        print("Vous ne pouvez pas faire cette action")
-        play(joueur)
+        if(tablemorph[1][0]==0):
+            #Placer l'emoji du joueur au milieu a gauche 
+           tablemorph[1][0]=joueur
+        #Sinon
+        else:
+            #Afficher "Vous ne pouvez pas faire cette action"
+            print("Vous ne pouvez pas faire cette action")
+             #Refaire jouer le joueur 
+            play(joueur)
 
-    #Si il choisi "6"
+     #Si le choix est "5"
+    elif entry=="5":
+        #Si la position au milieu  est libre 
+        if(tablemorph[1][1]==0):
+            #Placer l'emoji du joueur au milieu 
+            tablemorph[1][1]=joueur
+        #Sinon
+        else:
+            #Afficher "Vous ne pouvez pas faire cette action"
+            print("Vous ne pouvez pas faire cette action")
+             #Refaire jouer le joueur 
+            play(joueur)
+
+     #Si le choix est "6"
     elif entry=="6":
-        #Si la position au milieu a droite est libre
-        if (tablemorph[1][2])==0:
-            #Placer l'emoji du joueur au milieu a droite
+        #Si la position au milieu a droite est libre 
+        if(tablemorph[1][2]==0):
+            #Placer l'emoji du joueurau milieu a droite 
             tablemorph[1][2]=joueur
-        print("Vous ne pouvez pas faire cette action")
-        play(joueur)
-    #Si il choisi "1"
+        #Sinon
+        else:
+            #Afficher "Vous ne pouvez pas faire cette action"
+            print("Vous ne pouvez pas faire cette action")
+             #Refaire jouer le joueur 
+            play(joueur)
+
+     #Si le choix est "1"
     elif entry=="1":
-        #Si la position en bas a gauche est libre
-        if (tablemorph[2][0])==0:
-            #Placer l'emoji du joueur en bas a gauche
+        #Si la position en bas a gauche  est libre 
+        if(tablemorph[2][0]==0):
+            #Placer l'emoji du joueur en bas a gauche 
             tablemorph[2][0]=joueur
-        print("Vous ne pouvez pas faire cette action")
-        play(joueur)
-    #Si il choisi "2"
+        #Sinon 
+        else:
+            #Afficher "Vous ne pouvez pas faire cette action"
+            print("Vous ne pouvez pas faire cette action")
+            #Refaire jouer le joueur 
+            play(joueur)
+
+     #Si le choix est "2"
     elif entry=="2":
-        #Si la position en bas au milieu est libre
-        if (tablemorph[2][1])==0:
+        #Si la position en bas au milieu est libre 
+        if(tablemorph[2][1]==0):
             #Placer l'emoji du joueur en bas au milieu 
-            tablemorph[2][1]=joueur 
-        print("Vous ne pouvez pas faire cette action")
-        play(joueur)
-    #Si il choisi "3"
+            tablemorph[2][1]=joueur
+        #Sinon
+        else:
+            #Afficher "Vous ne pouvez pas faire cette action"
+            print("Vous ne pouvez pas faire cette action")
+             #Refaire jouer le joueur 
+            play(joueur)
+
+     #Si le choix est "3"
     elif entry=="3":
         #Si la position en bas a droite est libre 
-        if (tablemorph[2][2])==0:
-            #Placer l'emoji du joueur en bas a droite 
-            tablemorph[2][2]=joueur 
-        print("Vous ne pouvez pas faire cette action")
-        play(joueur)          
-    #Si non si les position de son pas libre ou que le joueur rentre un mauvais numero 
+        if(tablemorph[2][2]==0):
+           #Placer l'emoji du joueur en bas a droite 
+           tablemorph[2][2]=joueur
+        #Sinon
+        else:
+            #Afficher "Vous ne pouvez pas faire cette action"
+            print("Vous ne pouvez pas faire cette action")
+             #Refaire jouer le joueur 
+            play(joueur)
+    #Sinon
     else:
-        #Afficher le message "pas possible"
-        print("pas possible")
-        #Refaire jouer le joueur 
+        #Afficher "Erreur"
+        print("Erreur")
+         #Refaire jouer le joueur 
         play(joueur)
+
+
 #On definit la fonction "game"
 def game():
     #On importe la liste dans la fonction 
@@ -258,6 +304,7 @@ game()
 
 
 
+
 # https://github.com/NathanFallet/MorpionTPE/commit/2e2bc099f13a0632a286e1a0425b85f2cf3f7f42
 
 
@@ -265,180 +312,177 @@ game()
 
 
 
-def ordinateur(IA):
-    global tablemorph
-    if tablemorph[i][o]==1:
-        print('😎',end='')
-    else:
-        #On affiche le neutre "-"
-        print("-", end='')
-        #A la fin d'une liste on va a la ligne 
-    print("",end='\n')
+# def ordinateur(IA):
+#     global tablemorph
+#     if tablemorph[i][o]==1:
+#         print('😎',end='')
+#     else:
+#         #On affiche le neutre "-"
+#         print("-", end='')
+#         #A la fin d'une liste on va a la ligne 
+#     print("",end='\n')
 
-def jouer(IA):
-    #Afficher Le mot "Playeur"
-    print("Playeur", IA, end="" )
-     #Si c'est le joueur2 
-    if IA==1:
-         #Alors afficher un emoji neurd puis aller a la ligne 
-        print("🤓",end="\n")
-    #Demader au joueur de choisir sa position 
-    entry=randint[1,10]
-    #Si il choisi "7"
-    if entry=="7":
-        #Si la position en haut a gauche est libre 
-        if (tablemorph[0][0])==0:
-            #Placer l'emoji du joueur en haut a gauche 
-            tablemorph[0][0]= IA
-    #Si il choisi "8"
-    elif entry=="8":
-        #Si la position en haut au milieu est libre 
-        if (tablemorph[0][1])==0:
-            #Placer l'emoji du joueur en haut au milieu
-            tablemorph[0][1]= IA
+# def jouer(IA):
+#     #Afficher Le mot "Playeur"
+#     print("Playeur", IA, end="" )
+#      #Si c'est le joueur2 
+#     if IA==1:
+#          #Alors afficher un emoji neurd puis aller a la ligne 
+#         print("🤓",end="\n")
+#     #Demader au joueur de choisir sa position 
+#     entry=[1,10]
+#     #Si il choisi "7"
+#     if entry=="7":
+#         #Si la position en haut a gauche est libre 
+#         if (tablemorph[0][0])==0:
+#             #Placer l'emoji du joueur en haut a gauche 
+#             tablemorph[0][0]= IA
+#     #Si il choisi "8"
+#     elif entry=="8":
+#         #Si la position en haut au milieu est libre 
+#         if (tablemorph[0][1])==0:
+#             #Placer l'emoji du joueur en haut au milieu
+#             tablemorph[0][1]= IA
 
-    #Si il choisi "9"
-    elif entry=="9":
-        #Si la position en haut a droite est libre 
-        if (tablemorph[0][2])==0:
-            #Placer l'emoji du joueur en haut a droite
-            tablemorph[0][2]= IA
+#     #Si il choisi "9"
+#     elif entry=="9":
+#         #Si la position en haut a droite est libre 
+#         if (tablemorph[0][2])==0:
+#             #Placer l'emoji du joueur en haut a droite
+#             tablemorph[0][2]= IA
 
-    #Si il choisi "4"
-    elif entry=="4":
-        #Si la position au milieu a gauche est libre 
-        if (tablemorph[1][0])==0: 
-            #Placer l'emoji du joueur au milieu a gauche
-            tablemorph[1][0]= IA
+#     #Si il choisi "4"
+#     elif entry=="4":
+#         #Si la position au milieu a gauche est libre 
+#         if (tablemorph[1][0])==0: 
+#             #Placer l'emoji du joueur au milieu a gauche
+#             tablemorph[1][0]= IA
 
-    #Si il choisi "5"
-    elif entry=="5":
-        #Si la position au milieu est libre 
-        if (tablemorph[1][1])==0:
-            #Placer l'emoji du joueur au milieu
-            tablemorph[1][1]= IA
+#     #Si il choisi "5"
+#     elif entry=="5":
+#         #Si la position au milieu est libre 
+#         if (tablemorph[1][1])==0:
+#             #Placer l'emoji du joueur au milieu
+#             tablemorph[1][1]= IA
 
-    #Si il choisi "6"
-    elif entry=="6":
-        #Si la position au milieu a droite est libre
-        if (tablemorph[1][2])==0:
-            #Placer l'emoji du joueur au milieu a droite
-            tablemorph[1][2]= IA
+#     #Si il choisi "6"
+#     elif entry=="6":
+#         #Si la position au milieu a droite est libre
+#         if (tablemorph[1][2])==0:
+#             #Placer l'emoji du joueur au milieu a droite
+#             tablemorph[1][2]= IA
 
-    #Si il choisi "1"
-    elif entry=="1":
-        #Si la position en bas a gauche est libre
-        if (tablemorph[2][0])==0:
-            #Placer l'emoji du joueur en bas a gauche
-            tablemorph[2][0]= IA
+#     #Si il choisi "1"
+#     elif entry=="1":
+#         #Si la position en bas a gauche est libre
+#         if (tablemorph[2][0])==0:
+#             #Placer l'emoji du joueur en bas a gauche
+#             tablemorph[2][0]= IA
 
-    #Si il choisi "2"
-    elif entry=="2":
-        #Si la position en bas au milieu est libre
-        if (tablemorph[2][1])==0:
-            #Placer l'emoji du joueur en bas au milieu 
-            tablemorph[2][1]= IA 
+#     #Si il choisi "2"
+#     elif entry=="2":
+#         #Si la position en bas au milieu est libre
+#         if (tablemorph[2][1])==0:
+#             #Placer l'emoji du joueur en bas au milieu 
+#             tablemorph[2][1]= IA 
 
-    #Si il choisi "3"
-    elif entry=="3":
-        #Si la position en bas a droite est libre 
-        if (tablemorph[2][2])==0:
-            #Placer l'emoji du joueur en bas a droite 
-            tablemorph[2][2]= IA        
-    #Si non si les position de son pas libre ou que le joueur rentre un mauvais numero 
-    else:
-        #Afficher le message "pas possible"
-        print("pas possible")
-        #Refaire jouer le joueur 
-        jouer(IA)
+#     #Si il choisi "3"
+#     elif entry=="3":
+#         #Si la position en bas a droite est libre 
+#         if (tablemorph[2][2])==0:
+#             #Placer l'emoji du joueur en bas a droite 
+#             tablemorph[2][2]= IA        
+#     #Si non si les position de son pas libre ou que le joueur rentre un mauvais numero 
+#     else:
+#         #Afficher le message "pas possible"
+#         print("pas possible")
+#         #Refaire jouer le joueur 
+#         jouer(IA)
 
 
-if joueur==tablemorph[0][0]:
-    coupIA==tablemorph[0][1]
-    or coupIA==tablemorph[0][2]
-    or coupIA==tablemorph[1][0]
-    or coupIA==tablemorph[1][1]
-    or coupIA==tablemorph[1][2]
-    or coupIA==tablemorph[2][0]
-    or coupIA==tablemorph[2][1]
-    or coupIA==tablemorph[2][2]
-    
-    if joueur==tablemorph[0][1]:
-    coupIA==tablemorph[0][0]
-    or coupIA==tablemorph[0][2]
-    or coupIA==tablemorph[1][0]
-    or coupIA==tablemorph[1][1]
-    or coupIA==tablemorph[1][2]
-    or coupIA==tablemorph[2][0]
-    or coupIA==tablemorph[2][1]
-    or coupIA==tablemorph[2][2]
+# if joueur==tablemorph[0][0]:
+#     coupIA==tablemorph[0][1] or coupIA==tablemorph[0][2] or coupIA==tablemorph[1][0] or coupIA==tablemorph[1][1] or coupIA==tablemorph[1][2] or coupIA==tablemorph[2][0] or coupIA==tablemorph[2][1] or coupIA==tablemorph[2][2]
 
-    if joueur==tablemorph[0][2]:
-    coupIA==tablemorph[0][0]
-    or coupIA==tablemorph[0][1]
-    or coupIA==tablemorph[1][0]
-    or coupIA==tablemorph[1][1]
-    or coupIA==tablemorph[1][2]
-    or coupIA==tablemorph[2][0]
-    or coupIA==tablemorph[2][1]
-    or coupIA==tablemorph[2][2]
 
-    if joueur==tablemorph[1][0]:
-    coupIA==tablemorph[0][0]
-    or coupIA==tablemorph[0][1]
-    or coupIA==tablemorph[0][2]
-    or coupIA==tablemorph[1][1]
-    or coupIA==tablemorph[1][2]
-    or coupIA==tablemorph[2][0]
-    or coupIA==tablemorph[2][1]
-    or coupIA==tablemorph[2][2]
 
-    if joueur==tablemorph[1][1]:
-    coupIA==tablemorph[0][0]
-    or coupIA==tablemorph[0][1]
-    or coupIA==tablemorph[0][2]
-    or coupIA==tablemorph[1][0]
-    or coupIA==tablemorph[1][2]
-    or coupIA==tablemorph[2][0]
-    or coupIA==tablemorph[2][1]
-    or coupIA==tablemorph[2][2]
 
-    if joueur==tablemorph[1][2]:
-    coupIA==tablemorph[0][0]
-    or coupIA==tablemorph[0][1]
-    or coupIA==tablemorph[0][2]
-    or coupIA==tablemorph[1][0]
-    or coupIA==tablemorph[1][1]
-    or coupIA==tablemorph[2][0]
-    or coupIA==tablemorph[2][1]
-    or coupIA==tablemorph[2][2]
 
-    if joueur==tablemorph[2][0]:
-    coupIA==tablemorph[0][0]
-    or coupIA==tablemorph[0][1]
-    or coupIA==tablemorph[0][2]
-    or coupIA==tablemorph[1][0]
-    or coupIA==tablemorph[1][1]
-    or coupIA==tablemorph[1][2]
-    or coupIA==tablemorph[2][1]
-    or coupIA==tablemorph[2][2]
+#     if joueur==tablemorph[0][1]:
+#     coupIA==tablemorph[0][0]
+#     or coupIA==tablemorph[0][2]
+#     or coupIA==tablemorph[1][0]
+#     or coupIA==tablemorph[1][1]
+#     or coupIA==tablemorph[1][2]
+#     or coupIA==tablemorph[2][0]
+#     or coupIA==tablemorph[2][1]
+#     or coupIA==tablemorph[2][2]
 
-    if joueur==tablemorph[2][1]:
-    coupIA==tablemorph[0][0]
-    or coupIA==tablemorph[0][1]
-    or coupIA==tablemorph[0][2]
-    or coupIA==tablemorph[1][0]
-    or coupIA==tablemorph[1][1]
-    or coupIA==tablemorph[1][2]
-    or coupIA==tablemorph[2][0]
-    or coupIA==tablemorph[2][2]
+#     if joueur==tablemorph[0][2]:
+#     coupIA==tablemorph[0][0]
+#     or coupIA==tablemorph[0][1]
+#     or coupIA==tablemorph[1][0]
+#     or coupIA==tablemorph[1][1]
+#     or coupIA==tablemorph[1][2]
+#     or coupIA==tablemorph[2][0]
+#     or coupIA==tablemorph[2][1]
+#     or coupIA==tablemorph[2][2]
 
-    if joueur==tablemorph[2][2]:
-    coupIA==tablemorph[0][0]
-    or coupIA==tablemorph[0][1]
-    or coupIA==tablemorph[0][2]
-    or coupIA==tablemorph[1][0]
-    or coupIA==tablemorph[1][1]
-    or coupIA==tablemorph[1][2]
-    or coupIA==tablemorph[2][0]
-    or coupIA==tablemorph[2][1]
+#     if joueur==tablemorph[1][0]:
+#     coupIA==tablemorph[0][0]
+#     or coupIA==tablemorph[0][1]
+#     or coupIA==tablemorph[0][2]
+#     or coupIA==tablemorph[1][1]
+#     or coupIA==tablemorph[1][2]
+#     or coupIA==tablemorph[2][0]
+#     or coupIA==tablemorph[2][1]
+#     or coupIA==tablemorph[2][2]
+
+#     if joueur==tablemorph[1][1]:
+#     coupIA==tablemorph[0][0]
+#     or coupIA==tablemorph[0][1]
+#     or coupIA==tablemorph[0][2]
+#     or coupIA==tablemorph[1][0]
+#     or coupIA==tablemorph[1][2]
+#     or coupIA==tablemorph[2][0]
+#     or coupIA==tablemorph[2][1]
+#     or coupIA==tablemorph[2][2]
+
+#     if joueur==tablemorph[1][2]:
+#     coupIA==tablemorph[0][0]
+#     or coupIA==tablemorph[0][1]
+#     or coupIA==tablemorph[0][2]
+#     or coupIA==tablemorph[1][0]
+#     or coupIA==tablemorph[1][1]
+#     or coupIA==tablemorph[2][0]
+#     or coupIA==tablemorph[2][1]
+#     or coupIA==tablemorph[2][2]
+
+#     if joueur==tablemorph[2][0]:
+#     coupIA==tablemorph[0][0]
+#     or coupIA==tablemorph[0][1]
+#     or coupIA==tablemorph[0][2]
+#     or coupIA==tablemorph[1][0]
+#     or coupIA==tablemorph[1][1]
+#     or coupIA==tablemorph[1][2]
+#     or coupIA==tablemorph[2][1]
+#     or coupIA==tablemorph[2][2]
+
+#     if joueur==tablemorph[2][1]:
+#     coupIA==tablemorph[0][0]
+#     or coupIA==tablemorph[0][1]
+#     or coupIA==tablemorph[0][2]
+#     or coupIA==tablemorph[1][0]
+#     or coupIA==tablemorph[1][1]
+#     or coupIA==tablemorph[1][2]
+#     or coupIA==tablemorph[2][0]
+#     or coupIA==tablemorph[2][2]
+
+#     if joueur==tablemorph[2][2]:
+#     coupIA==tablemorph[0][0]
+#     or coupIA==tablemorph[0][1]
+#     or coupIA==tablemorph[0][2]
+#     or coupIA==tablemorph[1][0]
+#     or coupIA==tablemorph[1][1]
+#     or coupIA==tablemorph[1][2]
+#     or coupIA==tablemorph[2][0]
+#     or coupIA==tablemorph[2][1]
