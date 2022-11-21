@@ -408,7 +408,6 @@ game()
 
 
 
-
 #     if joueur==tablemorph[0][1]:
 #     coupIA==tablemorph[0][0]
 #     or coupIA==tablemorph[0][2]
