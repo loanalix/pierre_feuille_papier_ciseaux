@@ -39,15 +39,11 @@
      #On repete la variable col 3 fois   
  
          #On repete la variable row 3 fois 
-      
-            #Si la liste 
-           
-            #Si la liste 
           
             #Si la verification1 est sur 3 cases 
-            
+                #Alors le joueur 1 gagne 
             #Si la verification2 est sur 3 cases
-           
+                #Alors le joueur 2 gagne 
         #Reinitialiser la verification1 
       
         #Reinitialiser la verification2
@@ -56,12 +52,11 @@
   
            
            
-              
-            #Si la verification1 est sur 3 cases
-            
-                #Alors c'est le joueur 1 qui gagne 
-                winner="joueur1"
+    
+            #Si la verification1 est sur 3 cases 
+                #Alors le joueur 1 gagne 
             #Si la verification2 est sur 3 cases
+                #Alors le joueur 2 gagne 
          
         #Reinitialiser la verification1
       
