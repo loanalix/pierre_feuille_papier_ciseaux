@@ -365,34 +365,35 @@
 import math
 import copy
 
-tabA=[]
-pos=[tabA]
-def createGrid():
-    global tabA
-    #on crée x colonnes
-    for i in range(3):
-        #on crée une ligne de longueur x
-        tabB=[]
-        for o in range(3):
-            #on met un nombre aléatoire dans chaque case de la ligne (0=morte, 1=vivante)
-            tabB.append(0)
-        #on insère la ligne dans le tableau, créant une colonne
-        tabA.append(tabB)
+#On créer une liste que l'on utilisera comme une table 
+tablemorph = [
+        [0 , 0 , 0] ,
+        [0 , 0 , 0] ,
+        [0 , 0 , 0]
+    ]
 
-def displayGrid():
-    global tabA
+#On definit une grille 
+def grid() :
+    #on introduit la liste dans la fonction 
+    global tablemorph
+    #On repete la variable i pour avoir 3 colones 
     for i in range(3):
-        for o in range(3):
-            #si la cellule est morte, afficher un carré noir
-            if tabA[i][o]==1:
-                print("⭕️", end='')
-            #si la cellule est morte, afficher un carré blanc
-            elif tabA[i][o]==2:
-                print("❌",end='')
-            else :
-                print("⬜", end='')
-        #on met une ligne vide, pour mieux différencier chaque grille
-        print("", end='\n')
+            #On repete la variable i pour avoir 3 lignes
+            for o in range(3):
+                #Si la liste verifie 1 
+                if tablemorph[i][o]==1:
+                    #alors on affiche le joueur cool (joueur1 )
+                    print('😎 ',end='')
+                #Si la liste verifie 2
+                elif tablemorph[i][o]==2:
+                     #alors on affiche le joueur neurd (joueur2 )
+                    print('🤓 ',end='')
+                #Sinon 
+                else:
+                    #On affiche le neutre "-"
+                    print(" - ", end='')
+            #A la fin d'une liste on va a la ligne 
+            print("",end='\n')
 
 def checkForWin(list):
     col=0
@@ -437,7 +438,7 @@ def checkForWin(list):
     if list[0][2]==list[1][1]==list[2][0]:
         if list[0][2]==1:
             winner="player1"
-        elif tabA[0][2]==2:
+        elif tablemorph[0][2]==2:
             winner="player2"
     check1 = 0
     check2 = 0
@@ -456,62 +457,62 @@ def play(player):
     print("----------")
     print("Joueur ",player,end="")
     if player==1:
-        print("⭕️",end="\n")
+        print("😎",end="\n")
     if player==2:
         print("❌",end="\n")
 
     entry=input()
     if entry=="7":
-        if(tabA[0][0]==0):
-            tabA[0][0]=player
+        if(tablemorph[0][0]==0):
+            tablemorph[0][0]=player
         else:
             print("Vous ne pouvez pas faire cette action")
             play(player)
     elif entry=="8":
-        if(tabA[0][1]==0):
-            tabA[0][1]=player
+        if(tablemorph[0][1]==0):
+            tablemorph[0][1]=player
         else:
             print("Vous ne pouvez pas faire cette action")
             play(player)
     elif entry=="9":
-        if(tabA[0][2]==0):
-            tabA[0][2]=player
+        if(tablemorph[0][2]==0):
+            tablemorph[0][2]=player
         else:
             print("Vous ne pouvez pas faire cette action")
             play(player)
     elif entry=="4":
-        if(tabA[1][0]==0):
-            tabA[1][0]=player
+        if(tablemorph[1][0]==0):
+            tablemorph[1][0]=player
         else:
             print("Vous ne pouvez pas faire cette action")
             play(player)
     elif entry=="5":
-        if(tabA[1][1]==0):
-            tabA[1][1]=player
+        if(tablemorph[1][1]==0):
+            tablemorph[1][1]=player
         else:
             print("Vous ne pouvez pas faire cette action")
             play(player)
     elif entry=="6":
-        if(tabA[1][2]==0):
-            tabA[1][2]=player
+        if(tablemorph[1][2]==0):
+            tablemorph[1][2]=player
         else:
             print("Vous ne pouvez pas faire cette action")
             play(player)
     elif entry=="1":
-        if(tabA[2][0]==0):
-            tabA[2][0]=player
+        if(tablemorph[2][0]==0):
+            tablemorph[2][0]=player
         else:
             print("Vous ne pouvez pas faire cette action")
             play(player)
     elif entry=="2":
-        if(tabA[2][1]==0):
-            tabA[2][1]=player
+        if(tablemorph[2][1]==0):
+            tablemorph[2][1]=player
         else:
             print("Vous ne pouvez pas faire cette action")
             play(player)
     elif entry=="3":
-        if(tabA[2][2]==0):
-            tabA[2][2]=player
+        if(tablemorph[2][2]==0):
+            tablemorph[2][2]=player
         else:
             print("Vous ne pouvez pas faire cette action")
             play(player)
@@ -520,21 +521,21 @@ def play(player):
         play(player)
 
 def minimax(isMaximizing):
-    if checkForWin(tabA)=="player1":
+    if checkForWin(tablemorph)=="player1":
         return 1
-    elif checkForWin(tabA)=="player2":
+    elif checkForWin(tablemorph)=="player2":
         return -1
-    elif checkForWin(tabA)=="tie":
+    elif checkForWin(tablemorph)=="tie":
         return 0
 
     if isMaximizing:
         bestScore = -100
         for row in range(3):
             for col in range(3):
-                if tabA[row][col]==0:
-                    tabA[row][col]=1
+                if tablemorph[row][col]==0:
+                    tablemorph[row][col]=1
                     score = minimax(False)
-                    tabA[row][col]=0
+                    tablemorph[row][col]=0
                     if score > bestScore:
                         bestScore = score
         return bestScore
@@ -542,34 +543,34 @@ def minimax(isMaximizing):
         bestScore = 100
         for row in range(3):
             for col in range(3):
-                if tabA[row][col]==0:
-                    tabA[row][col]=2
+                if tablemorph[row][col]==0:
+                    tablemorph[row][col]=2
                     score = minimax(True)
-                    tabA[row][col]=0
+                    tablemorph[row][col]=0
                     if score < bestScore:
                         bestScore = score
         return bestScore
 
 def botPlay():
     print("----------")
-    print("Bot ❌")
+    print("Bot 🤓 ")
     bestScore = 100
     bestMove = [0,0]
     for row in range(3):
         for col in range(3):
-            if tabA[row][col]==0:
-                tabA[row][col]=2
+            if tablemorph[row][col]==0:
+                tablemorph[row][col]=2
                 score = minimax(True)
-                tabA[row][col]=0
+                tablemorph[row][col]=0
                 if score < bestScore:
                     bestScore = score
                     bestMove = [row, col]
-    tabA[bestMove[0]][bestMove[1]]=2
+    tablemorph[bestMove[0]][bestMove[1]]=2
 
 def ticTacToe(bot=False):
-    global tabA
+    global tablemorph
     print("Pour jouer, utilisez les touches du pavé numérique")
-    displayGrid()
+    grid()
     while True:
         for i in range(1,3):
             if i==2 and bot==True :
@@ -577,19 +578,19 @@ def ticTacToe(bot=False):
             else:
                 play(i)
 
-            displayGrid()
-            if checkForWin(tabA)=="player1":
-                print("LE JOUEUR 1 GAGNE! ⭕️")
+            grid()
+            if checkForWin(tablemorph)=="player1":
+                print("LE JOUEUR 1 GAGNE! 😎 ")
                 print("====================")
                 return
-            elif checkForWin(tabA)=="player2":
-                print("LE JOUEUR 2 GAGNE! ❌")
+            elif checkForWin(tablemorph)=="player2":
+                print("LE JOUEUR 2 GAGNE! 🤓 ")
                 print("====================")
                 return
-            elif checkForWin(tabA)=="tie":
+            elif checkForWin(tablemorph)=="tie":
                 print("EGALITE!")
                 print("====================")
                 return
 
-createGrid()
+grid()
 ticTacToe(True)
