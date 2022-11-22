@@ -2,6 +2,7 @@
 import math
 import copy
 
+
 #On créer une liste que l'on utilisera comme une table 
 tablemorph = [
         [0 , 0 , 0] ,
@@ -20,18 +21,21 @@ def grid() :
                 #Si la liste verifie 1 
                 if tablemorph[i][o]==1:
                     #alors on affiche le joueur cool (joueur1 )
-                    print('😎',end='')
+                    print('😎 ',end='')
                 #Si la liste verifie 2
                 elif tablemorph[i][o]==2:
                      #alors on affiche le joueur neurd (joueur2 )
-                    print('🤓',end='')
+                    print('🤓 ',end='')
                 #Sinon 
                 else:
                     #On affiche le neutre "-"
-                    print("-", end='')
+                    print(" - ", end='')
             #A la fin d'une liste on va a la ligne 
             print("",end='\n')
-#On definit la fonction "lagagne"
+
+
+
+#On definit la fonction "lagagne" qui va scanner le tableau
 def lagagne():
     #On introduit la liste 
     global tablemorph
@@ -124,10 +128,16 @@ def lagagne():
         winner="tie"
     #Retourner le gagnant
     return winner
+
+
 #definir la fonction play avec comme parametre joueur 
 def play(joueur):
-    #Afficher Le mot "Playeur"
-    print("Playeur", joueur, end="" )
+    #Afficher Le mot "Player"
+    if joueur==1:
+        print('\033[36m')
+    elif joueur==2:
+        print('\033[92m')
+    print("Joueur", joueur,'\033[0m', end="")
     #Si c'est le joueur1 
     if joueur==1:
         #Alors afficher un emoji cool puis aller a la ligne 
@@ -258,9 +268,52 @@ def play(joueur):
     #Sinon
     else:
         #Afficher "Erreur"
-        print("Erreur")
+        print('\033[91m',"Erreur. Tips : Les touches vont de 1 à 9 incluses !",'\033[0m')
          #Refaire jouer le joueur 
         play(joueur)
+
+
+
+#On definit la fonction "game"
+def game():
+    #On importe la liste dans la fonction 
+    global tablemorph
+    #On affiche le message "pour jouer, utilisez les touches du pavé numérique "
+    print('\033[91m',"Pour jouer, utilisez les touches du pavé numérique", '\033[0m')
+    #On appel la fonction "grid"
+    grid()
+    #Tant que c'est vrai 
+    while True:
+        #On créer une boucle i qui est comprise entre 1 et 2 
+        for i in range(1,3):
+            #On lance le jeux
+            play(i)
+            #On appel la fonction grid 
+            grid()
+            #Si l'une des fonctions "lagagne" est verifier pour le joueur1
+            if lagagne()=="joueur1":
+                #Alors afficher "Le joueur cool a gagner"
+                print('\033[95m',"LE JOUEUR 😎 A GAGNER! ",'\033[0m')
+                #retourner la fonction
+                return
+            #Si l'une des fonctions "lagagne" est verifier pour le joueur2
+            elif lagagne()=="joueur2":
+                #Alors afficher "Le joueur neurd a gagner"
+                print('\033[95m',"LE JOUEUR 🤓 A GAGNER!",'\033[0m')
+                #retourner la fonction
+                return
+            #Si la fonction "lagagne " vérifie la fonction "tie" 
+            elif lagagne()=="tie":
+                #Alors afficher "EGALITE!QUELLE SURPRISE!"
+                print('\033[95m',"EGALITE ! QUELLE SURPRISE !",'\033[0m')
+                #retourner  la fonction
+                return
+#Appeler la fonction game
+game()  
+
+
+
+
 
 def minimax(isMaximizing):
     if lagagne(tablemorph)=="joueur1":
