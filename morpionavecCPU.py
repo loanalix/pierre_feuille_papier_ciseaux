@@ -18,18 +18,19 @@ def grid() :
                 #Si la liste verifie 1 
                 if tablemorph[i][o]==1:
                     #alors on affiche le joueur cool (joueur1 )
-                    print('😎',end='')
+                    print('😎 ',end='')
                 #Si la liste verifie 2
                 elif tablemorph[i][o]==2:
                      #alors on affiche le joueur neurd (joueur2 )
-                    print('🤓',end='')
+                    print('🤓 ',end='')
                 #Sinon 
                 else:
                     #On affiche le neutre "-"
-                    print("-", end='')
+                    print(" - ", end='')
             #A la fin d'une liste on va a la ligne 
             print("",end='\n')
 #On definit la fonction "lagagne"
+
 def lagagne():
     #On introduit la liste 
     global tablemorph
@@ -122,6 +123,8 @@ def lagagne():
         winner="tie"
     #Retourner le gagnant
     return winner
+
+
 #definir la fonction play avec comme parametre joueur 
 def play(joueur):
     #Afficher Le mot "Playeur"
@@ -259,6 +262,7 @@ def play(joueur):
         print("Erreur")
          #Refaire jouer le joueur 
         play(joueur)
+
 
 
 #On definit la fonction "game"
