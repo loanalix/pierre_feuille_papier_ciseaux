@@ -348,7 +348,7 @@ def minimax(isMaximizing):
 
 def botPlay():
     print("----------")
-    print("Bot ❌")
+    print("Bot 🤓")
     bestScore = 100
     bestMove = [0,0]
     for row in range(3):
@@ -375,11 +375,11 @@ def game(bot=False):
 
             grid()
             if lagagne(tablemorph)=="player1":
-                print("LE JOUEUR 1 GAGNE! ⭕️")
+                print("LE JOUEUR 1 GAGNE! 😎 ")
                 print("====================")
                 return
             elif lagagne(tablemorph)=="player2":
-                print("LE JOUEUR 2 GAGNE! ❌")
+                print("LE JOUEUR 2 GAGNE! 🤓 ")
                 print("====================")
                 return
             elif lagagne(tablemorph)=="tie":
@@ -426,5 +426,5 @@ def game(bot=False):
 # game()  
 
 
-grid()
-game()
+# grid()
+# game()
