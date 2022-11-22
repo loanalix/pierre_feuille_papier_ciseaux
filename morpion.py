@@ -374,4 +374,4 @@ def game(bot=False):
 
 
 grid()
-game(True)
+game()
