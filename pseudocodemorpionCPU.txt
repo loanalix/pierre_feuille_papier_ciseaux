@@ -1,0 +1,400 @@
+#Debut
+
+import math
+import copy
+
+#On créer une liste que l'on utilisera comme une table 
+
+
+#On definit une grille 
+
+    #on introduit la liste dans la fonction 
+    
+    #On repete la variable i pour avoir 3 colones 
+    
+            #On repete la variable i pour avoir 3 lignes
+           
+                #Si la liste verifie 1 
+                
+                    #alors on affiche le joueur cool (joueur1 )
+                    
+                #Si la liste verifie 2
+            
+                     #alors on affiche le joueur neurd (joueur2 )
+                    
+                #Sinon 
+                
+                    #On affiche le neutre "-"
+                    
+            #A la fin d'une liste on va a la ligne 
+            
+
+#On definit la fonction "lagagne" qui va scanner le tableau
+
+    #On initialise qu'il n'y a rien dans les colone et les ligne 
+
+    #On initialise qu'il n'y a pas de vérification au début 
+  
+    #On initialise qu'il n'y a pas de gagnant 
+
+    #check for horizontal win
+    #On créer 3 colone 
+   
+        #On créer 3 ligne 
+       
+            #Si la fonction vérifie 1 
+            
+                #On ajoute une vérification au joueur 1 
+               
+            #Si la fonction vérifie 2
+            
+                #On ajoute une vérification au joueur 2
+              
+            #Si cela vérifi qu'il y a 3 symbole du joeur 1 aligner a l'horizontale 
+         
+                #le gagnant est le joueur 1
+               
+            #Si cela vérifi qu'il y a 3 symbole du joeur 2 aligner a l'horizontale
+          
+                #le gagnant est le joueur 2
+           
+        #Réinitialiser les vérifications 
+       
+    #check for vertical wins
+    #On créer 3 ligne
+    
+        #On créer 3 colone
+        
+            #Si la fonction vérifie 2
+            
+                #On ajoute une vérification au joueur 1
+                
+            #Si la fonction vérifie 2
+           
+                #On ajoute une vérification au joueur 2
+               
+            #Si cela vérifi qu'il y a 3 symbole du joeur 1 aligner a la verticale 
+           
+                #le gagnant est le joueur 1
+                
+            #Si cela vérifi qu'il y a 3 symbole du joeur 2 aligner a la verticale
+            
+                #le gagnant est le joueur 2
+                
+        #Réinitialiser les vérifications
+       
+
+    #check en bias de gauche à droite
+    #Si la liste vérifie la diagonale de gauche a droite 
+   
+        #Si la liste vérifie 1 
+       
+            #le gagnant est le joueur 1
+            winner="joueur1"
+        
+            #le gagnant est le joueur 2
+            
+    #check en bias de droite à gauche
+    #Si la liste vérifie la diagonale de droite a gauche 
+    
+            #le gagnant est le joueur 1
+        #Si le c'est le jouer 2 qui gagne 
+       
+            #le gagnant est le joueur 2
+           
+    #Réinitialiser les vérifications
+    
+
+    #check pour egalité
+    #Vérification de l'égalité égale a zéro
+   
+    #On répète 3 fois i pour créer 3 ligne 
+    
+        #On répète 3 fois o pour créer 3 colone  
+        
+            #Si es coordoné sont différente de 0 et qu'il n'y a pas de gagnant 
+            
+                #Ajouter a checkTie 1 
+                
+    #Si checkTie est égale a 9             
+    
+        #Alors il y a égalité 
+        
+    #Retourner le gagnant     
+   
+
+#definir la fonction play avec comme parametre joueur 
+
+    #Afficher une barre de séparation 
+    
+    #Si c'est le joueur 1 
+    
+        #Afficher avec la couleur bleu 
+        
+    #Si c'est le joueur 2
+    
+        #Afficher avec la couleur verte 
+        
+    #Afficher le mot joueur avec l'anulation de la couleur précedante     
+    
+    #Si c'est le joueur1 
+   
+        #Alors afficher un emoji cool puis aller a la ligne 
+       
+    #Si c'est le joueur2
+    
+        #Alors afficher un emoji neurd puis aller a la ligne 
+        
+    #Demader au joueur de choisir sa position
+    
+    #Si le choix est "7"
+    
+        #Si la position en haut au milieu est libre
+        
+            #Placer l'emoji du joueur en haut au milieu
+            
+        #Sinon 
+        
+            #Afficher "Vous ne pouvez pas faire cette action"
+            
+            #Refaire jouer le joueur
+            
+    #Si le choix est "8"
+   
+        #Si la position en haut au milieu est libre 
+        
+            #Placer l'emoji du joueur en haut au milieu 
+            
+        #Sinon
+       
+            #Afficher "Vous ne pouvez pas faire cette action"
+            
+            #Refaire jouer le joueur
+            
+    #Si le choix est "9"
+    
+        #Si la position en haut a droite est libre
+        
+            #Placer l'emoji du joueur en haut a droite
+            
+        #Sinon
+        
+            #Afficher "Vous ne pouvez pas faire cette action"
+            
+            #Refaire jouer le joueur
+            
+    #Si le choix est "4"
+    
+        #Si la position au milieu a gauche est libre
+        
+             #Placer l'emoji du joueur au milieu a gauche
+            
+        #Sinon
+        
+            #Afficher "Vous ne pouvez pas faire cette action"
+            
+            #Refaire jouer le joueur
+            
+    #Si le choix est "5"
+    
+        #Si la position au milieu  est libre
+        
+            #Placer l'emoji du joueur au milieu
+           
+        #Sinon
+        
+            #Afficher "Vous ne pouvez pas faire cette action"
+            
+            #Refaire jouer le joueur
+            
+    #Si le choix est "6"
+    
+        #Si la position au milieu a droite est libre
+        
+            #Placer l'emoji du joueurau milieu a droite
+            
+        #Sinon
+       
+            #Afficher "Vous ne pouvez pas faire cette action"
+            
+            #Refaire jouer le joueur
+            
+    #Si le choix est "1"
+    
+        #Si la position en bas a gauche  est libre
+        
+            #Placer l'emoji du joueur en bas a gauche
+            
+        #Sinon
+        
+            #Afficher "Vous ne pouvez pas faire cette action"
+            
+            #Refaire jouer le joueur
+            
+    #Si le choix est "2"
+    
+        #Si la position en bas au milieu est libre
+        
+            #Placer l'emoji du joueur en bas au milieu
+            
+        #Sinon
+        
+            #Afficher "Vous ne pouvez pas faire cette action"
+            
+            #Refaire jouer le joueur
+            
+    #Si le choix est "3"
+    
+        #Si la position en bas a droite est libre
+        
+            #Placer l'emoji du joueur en bas a droite
+            
+        #Sinon
+        
+            #Afficher "Vous ne pouvez pas faire cette action"
+            
+            #Refaire jouer le joueur
+            
+   #Sinon
+
+        #Afficher "Erreur"
+        
+         #Refaire jouer le joueur 
+       
+#On définit une fonction minimax avec comme parametre "isMaximizing"
+
+    #Si la fonction lagagne vérifie le joueur 1 
+    
+        #retourner 1 
+        
+    #Si la fonction lagagne vérifie le joueur 2
+    
+        #retourner -1
+        
+    #Si la fonction lagagne vérifie l'égalité 
+    
+        #retourner 0
+        
+    #Si il y a isMaximizing 
+    
+        #Commencez avec un bestScore de -100
+        
+        #Créer 3 ligne 
+        
+            #Créer 3 colone 
+            
+                #Si il ya un jouer 1 
+                
+                    
+                    #le score est égale au minimax desactiver 
+                    
+                    #Un joueur joue 
+                    
+                    #Si le score est superieur a bestScore 
+                    
+                        #Le bestScore prend la valeur de score 
+                        
+        #Retourner le bestScore 
+        
+    #Si le isMaximizing n'est pas activer 
+    
+        #Commencez avec un bestScore de 100
+        
+        #Créer 3 ligne
+        
+            #Créer 3 colone
+            
+                
+                    #le score est égale au minimax activer 
+                   
+                    #Le bot joue 
+                    
+                    #Si le score est plus petit que le bestScore 
+                    
+                        #Alors le bestScore prend la valeur du score 
+                        
+        #Retourner la fonction bestScore 
+       
+#On définit la fonction "botPlay"
+
+    #On affiche une ligne de séparation 
+    
+    #On affiche "Bot 🤓" en rouge 
+    
+    #On initialise le "bestScore" du bot a 100
+    
+    #On initialiser les coordoné pour le meilleur coup de base 
+    
+    #On repete 3 fois pour créer 3 ligne 
+    
+        #On repete 3 fois pour créer 3 colone 
+        
+            #Si il n'y a pas de joueur 2 
+            
+                #Le bot prend la position du joueur 2 
+                
+                #Le score est égale au minimax qui est activer 
+                
+                #le bot joue 
+                
+                #Si le score est plus petit que le bestSore 
+                
+                    #Le bestScore prend la valeur du score du bot 
+                    
+                    #le bestMove ce joue dans les ligne et colones 
+                    
+    #Rejouer les bestMove 
+    
+
+#On definit la fonction game avec le parametre "bot" désactiver de base 
+
+    #On importe la liste dans la fonction 
+ 
+    #On affiche le message "pour jouer, utilisez les touches du pavé numérique "
+    
+    #On appel la fonction "grid"
+ 
+    #Tant que 
+    
+        #On répete 
+        for i in range(1,3):
+            
+            if i==2 and bot==True :
+                #Alors le bot joue en 2ème position 
+                
+            #Sinon 
+          
+                #Faire jouer le joueur 2 
+                
+            #On appel la fonction "grid"
+            
+            #Si l'une des fonctions "lagagne" est verifier pour le joueur1
+            
+                #Alors afficher "LE JOUEUR 😎 GAGNE !"en rose
+                
+                #Afficher une barre de séparation 
+                
+                #retourner  la fonction
+                
+            #Si l'une des fonctions "lagagne" est verifier pour le joueur2
+            
+                #Alors afficher "LE JOUEUR 🤓 GAGNE !"en rose
+                
+                #Afficher une barre de séparation 
+                
+                #retourner  la fonction
+                
+            #Si la fonction "lagagne " vérifie la fonction "tie"
+            
+                #Alors afficher "EGALITE!QUELLE SURPRISE!"en rose 
+                
+                #Afficher une barre de séparation 
+                
+                #retourner  la fonction
+                
+#On appel la fonction grid
+
+#On appel la fonction game en activant le bot  
+
+
+#Fin 
