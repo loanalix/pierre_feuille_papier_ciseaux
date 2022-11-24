@@ -3,6 +3,8 @@
 import math
 import copy
 
+#on initialise la variable easterCounter comme 1
+
 #On créer une liste que l'on utilisera comme une table 
 
 
@@ -124,6 +126,8 @@ import copy
    
 
 #definir la fonction play avec comme parametre joueur 
+
+    #on introduit la easterCounter dans la fonction 
 
     #Afficher une barre de séparation 
     
@@ -254,6 +258,52 @@ import copy
             #Afficher "Vous ne pouvez pas faire cette action"
             
             #Refaire jouer le joueur
+     #Si le joueur rentre "69"
+    
+        #Si la variable esterCounter est a 1 
+        
+            #Afficher le message "Nice mais ce n'est pas ce que je voulais"
+            
+            #Ajouter 1 a la variable esterCounter 
+            
+            #Refaire jouer le joueur 
+            
+        #Si la variable esterCounter est a 2
+        
+            #Afficher le message "Toujours pas..."
+            
+            #Ajouter 1 a la variable esterCounter
+            
+            #Refaire jouer le joueur
+            
+        #Si la variable esterCounter est a 3
+        
+            #Afficher le message "Bon ça commence à bien faire là"
+            
+            #Ajouter 1 a la variable esterCounter
+            
+            #Refaire jouer le joueur
+            
+        #Si la variable esterCounter est a 4
+        
+            #Afficher le message "Dernière fois sinon..."
+            
+            #Ajouter 1 a la variable esterCounter
+            
+            #Refaire jouer le joueur
+            
+        #Si la variable esterCounter est a 5
+        
+            #Afficher le message "Je vous aurais prévenu."
+            
+            #Ajouter 1 a la variable esterCounter
+            
+            #Refaire jouer le joueur
+            
+        #Si la variable esterCounter est a 6
+        
+            #Faire quiter le jeu 
+            
             
    #Sinon
 

@@ -3,6 +3,9 @@
 import math
 import copy
 
+#on initialise la variable easterCounter comme 1
+easterCounter=1
+
 #On créer une liste que l'on utilisera comme une table 
 tablemorph = [
         [0 , 0 , 0] ,
@@ -135,6 +138,8 @@ def lagagne(list):
 
 #definir la fonction play avec comme parametre joueur 
 def play(joueur):
+    #on introduit la easterCounter dans la fonction 
+    global easterCounter
     #Afficher une barre de séparation 
     print("----------")
     #Si c'est le joueur 1 
@@ -265,6 +270,52 @@ def play(joueur):
             print("Vous ne pouvez pas faire cette action")
             #Refaire jouer le joueur
             play(joueur)
+    #Si le joueur rentre "69"
+    elif entry=="69":
+        #Si la variable esterCounter est a 1 
+        if easterCounter==1:
+            #Afficher le message "Nice mais ce n'est pas ce que je voulais"
+            print("Nice mais ce n'est pas ce que je voulais ")
+            #Ajouter 1 a la variable esterCounter 
+            easterCounter = easterCounter + 1
+            #Refaire jouer le joueur 
+            play(joueur)
+        #Si la variable esterCounter est a 2
+        elif easterCounter==2:
+            #Afficher le message "Toujours pas..."
+            print("Toujours pas...")
+            #Ajouter 1 a la variable esterCounter
+            easterCounter = easterCounter + 1
+            #Refaire jouer le joueur
+            play(joueur)
+        #Si la variable esterCounter est a 3
+        elif easterCounter==3:
+            #Afficher le message "Bon ça commence à bien faire là"
+            print("Bon ça commence à bien faire là")
+            #Ajouter 1 a la variable esterCounter
+            easterCounter = easterCounter + 1
+            #Refaire jouer le joueur
+            play(joueur)
+        #Si la variable esterCounter est a 4
+        elif easterCounter==4:
+            #Afficher le message "Dernière fois sinon..."
+            print("Dernière fois sinon...")
+            #Ajouter 1 a la variable esterCounter
+            easterCounter = easterCounter + 1
+            #Refaire jouer le joueur
+            play(joueur)
+        #Si la variable esterCounter est a 5
+        elif easterCounter==5:
+            #Afficher le message "Je vous aurais prévenu."
+            print("Je vous aurais prévenu.")
+            #Ajouter 1 a la variable esterCounter
+            easterCounter = easterCounter + 1
+            #Refaire jouer le joueur
+            play(joueur)
+        #Si la variable esterCounter est a 6
+        elif easterCounter==6:
+            #Faire quiter le jeu 
+            quit()
    #Sinon
     else:
         #Afficher "Erreur"
